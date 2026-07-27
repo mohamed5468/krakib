@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1225383949666273');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1225383949666273&ev=PageView&noscript=1" /></noscript>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كراكيب بنوتة | Karakip Banota Cosmetics - عناية طبيعية فاخرة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            plum: '#4A2B5E',          /* Rich Slate Violet / Logo Purple */
+                            hover: '#351B47',         /* Dark Violet */
+                            champagne: '#C5B396',     /* Satin Champagne Gold */
+                            champagneLight: '#F5EEFA',/* Soft Lilac Highlight Wash */
+                            alabaster: '#FAF7FC',     /* Soft Lavender Alabaster Background */
+                            darkSlate: '#1D1022',     /* Midnight Purple */
+                            dark: '#2A1D33',          /* Slate Purple Black */
+                            muted: '#7E6E85',         /* Muted Violet Grey */
+                            border: '#E6DFEB',        /* Delicate Lilac Grey Border */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="bg-brand-alabaster overflow-x-hidden text-brand-dark">
+
+    <!-- Top Announcement Strip -->
+    <!-- <div id="offerBanner" class="hidden bg-[#4A2B5E] text-white py-2 px-4 flex items-center justify-center flex-wrap gap-4 text-center z-50 border-b border-brand-border/10">
+        <div class="flex items-center gap-2.5 font-medium text-xs sm:text-sm relative z-10">
+            <span class="text-base inline-block">✨</span>
+            <span id="offerTitle" class="tracking-wide text-brand-alabaster">خصومات حصرية لفترة محدودة من كراكيب بنوتة</span>
+        </div>
+        
+        <div class="flex items-center gap-2 font-mono text-xs sm:text-sm relative z-10" dir="ltr">
+            <div class="flex flex-col items-center">
+                <span id="timerDays" class="bg-white/10 text-white px-2 py-0.5 rounded-sm border border-white/20 min-w-[32px] text-xs sm:text-sm">00</span>
+                <span class="text-[8px] text-brand-champagne mt-0.5 tracking-wider font-sans">DAYS</span>
+            </div>
+            <span class="text-brand-champagne font-sans -mt-3">:</span>
+            <div class="flex flex-col items-center">
+                <span id="timerHours" class="bg-white/10 text-white px-2 py-0.5 rounded-sm border border-white/20 min-w-[32px] text-xs sm:text-sm">00</span>
+                <span class="text-[8px] text-brand-champagne mt-0.5 tracking-wider font-sans">HOURS</span>
+            </div>
+            <span class="text-brand-champagne font-sans -mt-3">:</span>
+            <div class="flex flex-col items-center">
+                <span id="timerMinutes" class="bg-white/10 text-white px-2 py-0.5 rounded-sm border border-white/20 min-w-[32px] text-xs sm:text-sm">00</span>
+                <span class="text-[8px] text-brand-champagne mt-0.5 tracking-wider font-sans">MINS</span>
+            </div>
+            <span class="text-red-300 font-sans -mt-3">:</span>
+            <div class="flex flex-col items-center">
+                <span id="timerSeconds" class="bg-red-950/40 text-red-300 px-2 py-0.5 rounded-sm border border-red-500/25 min-w-[32px] text-xs sm:text-sm">00</span>
+                <span class="text-[8px] text-red-300 mt-0.5 tracking-wider font-sans">SECS</span>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Centered Header & Navigation -->
+    <header class="bg-white border-b border-brand-border sticky top-0 z-40 shadow-xs">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <!-- Mobile drawer menu toggle -->
+            <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start order-1 md:order-1">
+                <button onclick="toggleMobileMenu()" class="md:hidden text-xl text-brand-plum p-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="text-xs font-semibold tracking-wider text-brand-muted hidden sm:block">كراكيب بنوتة للتجميل
+                    والعناية</div>
+            </div>
+
+            <!-- Centered Logo -->
+            <div class="flex items-center justify-center order-2 md:order-2">
+                <a href="#"
+                    class="inline-block border border-brand-border p-1 bg-white shadow-xs rounded-sm hover:border-brand-champagne transition-all">
+                    <img src="images/logo.png" alt="Karakip Banota Cosmetics" class="nav-logo">
+                </a>
+            </div>
+
+            <!-- Cart drawer trigger -->
+            <div class="flex items-center gap-4 order-3 md:order-3">
+                <button onclick="showCart()"
+                    class="group flex items-center gap-2 border border-brand-plum hover:bg-brand-plum hover:text-white text-brand-plum px-4 py-2 rounded-sm text-sm font-semibold transition-all duration-300">
+                    <i class="fas fa-shopping-cart text-base"></i>
+                    <span id="cart-count"
+                        class="bg-brand-plum group-hover:bg-white group-hover:text-brand-plum text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transition-colors">0</span>
+                    <span class="hidden sm:inline tracking-wider">حقيبة التسوق</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Links Bar -->
+        <div class="border-t border-brand-border/60 bg-brand-champagneLight/60 hidden md:block">
+            <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-center gap-10 text-xs font-semibold tracking-wider text-brand-dark"
+                dir="rtl">
+                <a href="#hero" class="nav-link-premium hover:text-brand-plum transition-colors">الرئيسية</a>
+                <a href="#services" class="nav-link-premium hover:text-brand-plum transition-colors">خدماتنا
+                    وأقسامنا</a>
+                <a href="#featured" class="nav-link-premium hover:text-brand-plum transition-colors">المجموعة
+                    المميزة</a>
+                <a href="#about" class="nav-link-premium hover:text-brand-plum transition-colors">عن كراكيب بنوتة</a>
+                <a href="#contact" class="nav-link-premium hover:text-brand-plum transition-colors">تواصل معنا</a>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-border px-6 py-4 text-right"
+            dir="rtl">
+            <a href="#hero" onclick="toggleMobileMenu()"
+                class="block py-2 text-sm font-medium text-brand-dark hover:text-brand-plum transition-colors">الرئيسية</a>
+            <a href="#services" onclick="toggleMobileMenu()"
+                class="block py-2 text-sm font-medium text-brand-dark hover:text-brand-plum transition-colors">خدماتنا
+                وأقسامنا</a>
+            <a href="#featured" onclick="toggleMobileMenu()"
+                class="block py-2 text-sm font-medium text-brand-dark hover:text-brand-plum transition-colors">المجموعة
+                المميزة</a>
+            <a href="#about" onclick="toggleMobileMenu()"
+                class="block py-2 text-sm font-medium text-brand-dark hover:text-brand-plum transition-colors">عن كراكيب
+                بنوتة</a>
+            <a href="#contact" onclick="toggleMobileMenu()"
+                class="block py-2 text-sm font-medium text-brand-dark hover:text-brand-plum transition-colors">تواصل
+                معنا</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="hero"
+        class="hero-bg text-brand-dark min-h-[85vh] flex flex-col justify-center relative py-16 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-12 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div class="md:col-span-7 space-y-6 text-right" dir="rtl">
+                <div
+                    class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-brand-champagne uppercase border-b border-brand-champagne pb-1">
+                    <span>✦ عناية طبيعية فاخرة ✦</span>
+                    <span>•</span>
+                    <span>بواسطة ماهيتاب</span>
+                </div>
+
+                <h1
+                    class="serif-font text-5xl sm:text-6xl md:text-7xl font-light leading-none tracking-tight text-brand-plum">
+                    بنهتم بجمال بشرتكِ ✦ <br>
+                    <span class="italic font-normal text-brand-champagne text-4xl sm:text-5xl md:text-6xl">لمسات ناعمة
+                        وإشراقة دائمة</span>
+                </h1>
+
+                <p class="text-base sm:text-lg max-w-lg text-brand-muted font-light leading-relaxed">
+                    مستحضرات عناية بالبشرة طبيعية 100%، مصممة بدقة وعناية فائقة لتغذي بشرتكِ وتمنحكِ سحراً وإشراقة دافئة
+                    كل يوم.
+                </p>
+
+                <div class="flex items-center gap-4 pt-4">
+                    <a href="#products"
+                        class="btn-gold-premium text-white px-8 py-4 font-semibold text-sm inline-flex items-center gap-3 transition-all shadow-md">
+                        <span>تسوقي الآن</span>
+                        <i class="fas fa-arrow-left text-xs"></i>
+                    </a>
+
+                    <a href="#about"
+                        class="border border-brand-plum hover:bg-brand-plum hover:text-white text-brand-plum px-8 py-4 font-semibold text-sm inline-flex items-center gap-3 transition-all duration-300 rounded-sm">
+                        <i class="fas fa-play-circle text-sm text-brand-champagne"></i>
+                        <span>شاهد بالفيديو</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Hero Visual -->
+            <div class="md:col-span-5 flex justify-center relative">
+                <div
+                    class="relative z-10 w-full max-w-md bg-brand-champagneLight p-3 border border-brand-border rounded-t-[140px] shadow-lg">
+                    <img src="images/hero_showcase.png" alt="كراكيب بنوتة"
+                        class="w-full h-80 sm:h-96 object-cover rounded-t-[130px] border border-brand-border">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Stats Ribbon -->
+        <div class="max-w-7xl mx-auto px-6 w-full mt-16 pt-8 border-t border-brand-border/60">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center" dir="rtl">
+                <div class="p-3 border-l border-brand-border/60 last:border-l-0">
+                    <div class="serif-font text-3xl sm:text-4xl font-light text-brand-plum">4.8★</div>
+                    <div class="text-xs text-brand-muted mt-1 font-light">التقييم العام للعميلات</div>
+                </div>
+                <div class="p-3 border-l border-brand-border/60 last:border-l-0">
+                    <div class="serif-font text-3xl sm:text-4xl font-light text-brand-plum">25k+</div>
+                    <div class="text-xs text-brand-muted mt-1 font-light">عميلة سعيدة ونضرة</div>
+                </div>
+                <div class="p-3 border-l border-brand-border/60 last:border-l-0">
+                    <div class="serif-font text-3xl sm:text-4xl font-light text-brand-plum">100%</div>
+                    <div class="text-xs text-brand-muted mt-1 font-light">مكونات طبيعية وآمنة</div>
+                </div>
+                <div class="p-3">
+                    <div class="serif-font text-3xl sm:text-4xl font-light text-brand-plum">10k+</div>
+                    <div class="text-xs text-brand-muted mt-1 font-light">طلبات مكتملة بنجاح</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: OUR SERVICES / CATEGORIES -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">اكتشفي تشكيلتنا
+                المميزة</span>
+            <h2 class="serif-font text-4xl md:text-5xl font-light text-brand-plum mt-2">خدماتنا وأقسام العناية</h2>
+            <p class="text-base text-brand-muted max-w-xl mx-auto font-light mt-3">تصفحي تشكيلتنا المتنوعة المصممة
+                خصيصاً لتغطي كافة احتياجات بشرتكِ وجسمكِ</p>
+        </div>
+
+        <!-- Categories Grid -->
+        <div id="categories-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center py-20 col-span-full text-brand-muted">
+                <i class="fas fa-spinner fa-spin text-2xl text-brand-plum mb-3"></i>
+                <p class="text-sm font-light">جاري تحميل تشكيلة كراكيب بنوتة...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SPA TREATMENTS & SKINCARE -->
+    <section class="bg-brand-champagneLight/80 py-20 border-t border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">إشراقة طبيعية
+                    دائمـة</span>
+                <h2 class="serif-font text-4xl md:text-5xl font-light text-brand-plum mt-2">علاجات بشرة وعناية متكاملة
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-center" dir="rtl">
+                <!-- Left Features -->
+                <div class="md:col-span-4 space-y-6 text-right">
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">العناية بالوجه والمسام</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">تنظيف عميق وتحسين ملمس البشرة بنسبة 99%</p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">سيروم الهيالورونيك 1%</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">ترطيب مكثف مع 7% نياسيناميد لتقليل المسام
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">غسول الساليسيليك الرغوي</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">تنظيف لطيف وإزالة الدهون وزيت بذور العنب</p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">ترطيب الشفاه بزبدة الكاكاو</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">زيوت طبيعية وشمع العسل لمنحها النعومة
+                            والحماية</p>
+                    </div>
+                </div>
+
+                <!-- Center Circle Image Showcase -->
+                <div class="md:col-span-4 flex justify-center my-6 md:my-0">
+                    <div
+                        class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-brand-champagne/40 p-2 bg-white shadow-xl flex items-center justify-center">
+                        <img src="images/product_serum.png" alt="Karakip Banota Serum"
+                            class="w-full h-full rounded-full object-cover border border-brand-border">
+                    </div>
+                </div>
+
+                <!-- Right Features -->
+                <div class="md:col-span-4 space-y-6 text-right">
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">كريم العيون بالكافيين</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">تقليل مظهر الانتفاخات والبابونج لتهدئة محيط
+                            العين</p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">زبدة الشيا وزيت اللوز</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">تغذية متكاملة للبشرة الجافة والعادية يدوم
+                            طويلاً</p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">زيت الأظافر بالأرجان</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">تقوية الأظافر الهشة وتغذية الجلد المحيط بها
+                        </p>
+                    </div>
+                    <div class="p-4 bg-white border border-brand-border rounded-sm">
+                        <h4 class="font-bold text-sm text-brand-plum">تغليف هدايا فاخر</h4>
+                        <p class="text-xs text-brand-muted mt-1 font-light">شنطة إهداء مميزة وكارت خاص حسب الطلب</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: MODERN & TRADITIONAL SKINCARE -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">أصالة المكونات وخبرة
+                العلم</span>
+            <h2 class="serif-font text-4xl md:text-5xl font-light text-brand-plum mt-2">عناية حديثة وتقاليد طبيعية</h2>
+            <p class="text-base text-brand-muted max-w-xl mx-auto font-light mt-3">نوفق بين أصالة الزيوت الطبيعية وأحدث
+                ما توصل إليه علم العناية الحديث</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 items-center" dir="rtl">
+            <div class="bg-white p-4 border border-brand-border rounded-sm text-center">
+                <img src="images/product_hand.png" alt="Natural Skincare"
+                    class="w-full h-64 object-cover rounded-sm border border-brand-border mb-4">
+                <h3 class="serif-font text-xl font-medium text-brand-plum">منتجات اليدين والأظافر</h3>
+                <p class="text-xs text-brand-muted font-light mt-2">ترطيب عميق وتغذية باللوز الحلو وفيتامين E</p>
+            </div>
+
+            <!-- Center Fluid Mask Container -->
+            <div class="flex flex-col items-center justify-center p-4">
+                <div
+                    class="w-72 h-72 fluid-mask bg-brand-champagne/20 p-2 border-2 border-brand-champagne shadow-lg flex items-center justify-center overflow-hidden">
+                    <img src="images/product_cream.png" alt="Facial Therapy"
+                        class="w-full h-full object-cover fluid-mask">
+                </div>
+                <h3 class="serif-font text-xl font-medium text-brand-plum mt-4">ترطيب موازٍ للبشرة</h3>
+            </div>
+
+            <div class="bg-white p-4 border border-brand-border rounded-sm text-center">
+                <img src="images/product_eye.png" alt="Lip Therapy"
+                    class="w-full h-64 object-cover rounded-sm border border-brand-border mb-4">
+                <h3 class="serif-font text-xl font-medium text-brand-plum">العناية بالعين والشفاه</h3>
+                <p class="text-xs text-brand-muted font-light mt-2">مزيج الجوجوبا والورد البري لترطيب متوازن</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FEATURED COLLECTION -->
+    <section id="featured" class="bg-white py-20 border-t border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">✦ المجموعة المميزة
+                    ✦</span>
+                <h2 class="serif-font text-4xl md:text-5xl font-light text-brand-plum mt-2">تشكيلة كراكيب بنوتة الأكثر
+                    طلباً</h2>
+
+                <!-- Minimal Search Bar -->
+                <div class="mt-8 max-w-md mx-auto relative">
+                    <input id="menuSearchInput" type="text" oninput="window.searchMenu(this.value)"
+                        placeholder="ابحثي عن منتجك المفضل..."
+                        class="w-full border-b border-brand-border bg-transparent pb-3 pr-10 text-base outline-none focus:border-brand-plum transition-all text-right placeholder-gray-400 font-light">
+                    <i class="fas fa-search absolute right-2 top-1/2 -translate-y-1/2 text-xs text-brand-muted"></i>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-start" dir="rtl">
+                <!-- Left Arch Card Showcase -->
+                <div
+                    class="md:col-span-4 bg-brand-champagneLight p-6 border border-brand-border arch-top-lg text-center shadow-md">
+                    <img src="images/product_serum.png" alt="Featured Skincare"
+                        class="w-full h-80 object-cover arch-top-lg border border-brand-border mb-6">
+                    <h3 class="serif-font text-2xl font-light text-brand-plum">سيروم كراكيب بنوتة الفاخر</h3>
+                    <p class="text-xs text-brand-muted font-light mt-2 leading-relaxed">تزيل واقي الشمس والماكياج
+                        والشوائب بلطف مع الحفاظ على ترطيب البشرة الطبيعي</p>
+                    <a href="#products"
+                        class="mt-6 btn-gold-premium px-8 py-3 text-xs inline-block tracking-wider">تسوقي الآن</a>
+                </div>
+
+                <!-- Right 2-Column Product Grid -->
+                <div class="md:col-span-8">
+                    <div id="menuSearchResults" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: PRODUCT SPECIALTY BADGES STRIP -->
+    <section class="bg-brand-champagneLight py-10 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-6">
+                <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">مميزات منتجات كراكيب
+                    بنوتة</span>
+            </div>
+
+            <div class="flex items-center justify-between flex-wrap gap-4 text-center font-light text-xs text-brand-plum"
+                dir="rtl">
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-leaf text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>100% طبيعي</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-tint text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>ترطيب عميق</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-flask text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>خالي من البارابين</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-magic text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>نضارة فورية</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-heart text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>غير مجرب على الحيوانات</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-shield-alt text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>اختبارات جلدية</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-1 min-w-[100px]">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white border border-brand-border flex items-center justify-center text-brand-plum text-lg shadow-xs">
+                        <i class="fas fa-seedling text-[#4A2B5E] text-base"></i>
+                    </div>
+                    <span>صديق للبيئة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: LATEST NEWS & INSTAGRAM GALLERY -->
+    <section class="bg-white py-20 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-12" dir="rtl">
+                <div>
+                    <span class="text-xs font-semibold tracking-widest text-brand-champagne uppercase">نصائح ومقالات
+                        العناية</span>
+                    <h2 class="serif-font text-3xl sm:text-4xl font-light text-brand-plum mt-1">أحدث مقالات العناية
+                        والجمال</h2>
+                </div>
+                <a href="#about" class="btn-outline-premium px-6 py-2.5 text-xs tracking-wider">عرض كل المقالات</a>
+            </div>
+
+            <!-- Blog 3-Column Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16" dir="rtl">
+                <div class="bg-brand-nudeCard border border-brand-border p-4 rounded-sm">
+                    <img src="images/product_serum.png" alt="Blog Post"
+                        class="w-full h-48 object-cover rounded-sm border border-brand-border mb-4">
+                    <span class="text-[10px] text-brand-champagne font-mono">24 يوليو 2026</span>
+                    <h3 class="serif-font text-lg font-medium text-brand-plum mt-1">كيف تختارين السيروم المناسب لنوع
+                        بشرتكِ؟</h3>
+                    <p class="text-xs text-brand-muted font-light mt-2 leading-relaxed">تعرفي على فوائد النياسيناميد 7%
+                        مع الهيالورونيك للحصول على بشرة صحية ونضرة...</p>
+                </div>
+
+                <div class="bg-brand-nudeCard border border-brand-border p-4 rounded-sm">
+                    <img src="images/product_cream.png" alt="Blog Post"
+                        class="w-full h-48 object-cover rounded-sm border border-brand-border mb-4">
+                    <span class="text-[10px] text-brand-champagne font-mono">20 يوليو 2026</span>
+                    <h3 class="serif-font text-lg font-medium text-brand-plum mt-1">أسرار الترطيب الطبيعي بزبدة الشيا
+                        واللوز</h3>
+                    <p class="text-xs text-brand-muted font-light mt-2 leading-relaxed">دليلكِ الشامل لحماية حاجز البشرة
+                        والتخلص من الخشونة في فصول السنة المختلفة...</p>
+                </div>
+
+                <div class="bg-brand-nudeCard border border-brand-border p-4 rounded-sm">
+                    <img src="images/product_eye.png" alt="Blog Post"
+                        class="w-full h-48 object-cover rounded-sm border border-brand-border mb-4">
+                    <span class="text-[10px] text-brand-champagne font-mono">15 يوليو 2026</span>
+                    <h3 class="serif-font text-lg font-medium text-brand-plum mt-1">طرق العناية بمحيط العين وتقليل
+                        الانتفاخ</h3>
+                    <p class="text-xs text-brand-muted font-light mt-2 leading-relaxed">دور الكافيين والبابونج والورد
+                        البري في منح عينيكِ مظهراً مشرقاً وخالياً من الإجهاد...</p>
+                </div>
+            </div>
+
+            <!-- Instagram 5-Square Gallery Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+                <img src="images/product_serum.png" alt="Gallery photo"
+                    class="w-full h-36 object-cover border border-brand-border rounded-sm">
+                <img src="images/product_cream.png" alt="Gallery photo"
+                    class="w-full h-36 object-cover border border-brand-border rounded-sm">
+                <img src="images/product_eye.png" alt="Gallery photo"
+                    class="w-full h-36 object-cover border border-brand-border rounded-sm">
+                <img src="images/product_hand.png" alt="Gallery photo"
+                    class="w-full h-36 object-cover border border-brand-border rounded-sm">
+                <img src="images/product_serum.png" alt="Gallery photo"
+                    class="w-full h-36 object-cover border border-brand-border rounded-sm">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT BRAND STORY SECTION -->
+    <section id="about" class="bg-brand-darkSlate text-white py-20 border-t border-b border-brand-champagne/20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5 relative">
+                <div class="absolute -inset-3 border border-brand-champagne/30 z-0"></div>
+                <div class="relative z-10 bg-white p-6 border border-brand-border text-center shadow-xl">
+                    <img src="images/logo.png" alt="Karakip Banota By Mahitap" class="w-full max-w-xs mx-auto">
+                    <div class="mt-4 pt-4 border-t border-brand-border">
+                        <span class="text-sm font-semibold tracking-wider text-[#4A2B5E]">كراكيب بنوتة بواسطة
+                            ماهيتاب</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 text-right" dir="rtl">
+                <div
+                    class="inline-block text-xs font-semibold tracking-widest text-brand-champagne uppercase mb-3 font-serif">
+                    OUR BRAND STORY</div>
+                <h2 class="serif-font text-3xl md:text-5xl font-light mb-6 text-white leading-tight">كراكيب بنوتة <span
+                        class="text-brand-champagne italic">By Mahitap</span></h2>
+
+                <blockquote
+                    class="text-base sm:text-lg leading-relaxed text-gray-300 font-light border-r-2 border-brand-champagne pr-4 my-6">
+                    "نؤمن بأن جمال كل بنوتة يبدأ من روتين عناية طبيعي وآمن. في كراكيب بنوتة، نبتكر منتجات تجمع بين سحر
+                    المكونات الطبيعية النقية ودقة التصنيع لتبرزي إشراقتكِ بثقة وبساطة."
+                </blockquote>
+
+                <div class="grid grid-cols-3 gap-6 mt-10 border-t border-brand-champagne/10 pt-8">
+                    <div>
+                        <div class="serif-font text-3xl md:text-5xl font-light text-brand-champagne">100%</div>
+                        <div class="text-xs text-gray-400 mt-1 font-light">طبيعي وآمن</div>
+                    </div>
+                    <div>
+                        <div class="serif-font text-3xl md:text-5xl font-light text-brand-champagne">98%</div>
+                        <div class="text-xs text-gray-400 mt-1 font-light">رضا العميلات</div>
+                    </div>
+                    <div>
+                        <div class="serif-font text-3xl md:text-5xl font-light text-brand-champagne">24h</div>
+                        <div class="text-xs text-gray-400 mt-1 font-light">توصيل سريع</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: DEEP PURPLE FOOTER -->
+    <footer id="contact" class="bg-[#170D1C] text-white py-16 border-t border-brand-champagne/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 text-right" dir="rtl">
+
+                <div class="md:col-span-5 space-y-6">
+                    <div class="inline-block bg-white p-2 border border-brand-border rounded-sm">
+                        <img src="images/logo.png" alt="Logo" class="h-14">
+                    </div>
+                    <p class="text-gray-400 text-sm font-light max-w-sm leading-relaxed">
+                        كراكيب بنوتة تقدم لكِ مستحضرات عناية بالبشرة طبيعية 100% ومصنوعة بكل حب ودقة علمية لتعزيز جمالكِ
+                        وإشراقتكِ الطبيعية.
+                    </p>
+
+                    <div class="mt-6 flex gap-4 justify-start">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/201204431632" target="_blank"
+                            class="w-10 h-10 rounded-full border border-gray-700 hover:border-brand-champagne hover:text-brand-champagne flex items-center justify-center transition-colors">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/theskinlab2022?igsh=MWc5aG1xdjF3bDBxeA==" target="_blank"
+                            class="w-10 h-10 rounded-full border border-gray-700 hover:border-brand-champagne hover:text-brand-champagne flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1BcRfEYBzq/" target="_blank"
+                            class="w-10 h-10 rounded-full border border-gray-700 hover:border-brand-champagne hover:text-brand-champagne flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f text-base"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@the.skin.lab8?_r=1&_t=ZS-98J6Rb0NcTE" target="_blank"
+                            class="w-10 h-10 rounded-full border border-gray-700 hover:border-brand-champagne hover:text-brand-champagne flex items-center justify-center transition-colors">
+                            <i class="fab fa-tiktok text-base"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="text-sm font-semibold tracking-widest text-brand-champagne uppercase">روابط سريعة</h4>
+                    <ul class="space-y-2 text-sm font-light text-gray-400">
+                        <li><a href="#products" class="hover:text-white transition-colors">المنتجات المميزة</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">تصفح الأقسام</a></li>
+                        <li><a href="#offers" class="hover:text-white transition-colors">العروض والحزم</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">عن كراكيب بنوتة</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 space-y-4">
+                    <h4 class="text-sm font-semibold tracking-widest text-brand-champagne uppercase">تواصل مباشر</h4>
+                    <div class="space-y-3 text-sm font-light text-gray-400">
+                        <div class="flex gap-3 items-center justify-start">
+                            <i class="fas fa-phone text-brand-champagne text-xs"></i>
+                            <div>01204431632</div>
+                        </div>
+
+                        <div class="flex gap-3 items-center justify-start">
+                            <i class="fab fa-whatsapp text-brand-champagne text-sm"></i>
+                            <div>واتساب: 01204431632</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center text-gray-500 text-xs mt-16 border-t border-gray-900 pt-8">
+                © 2026 كراكيب بنوتة بواسطة ماهيتاب • جميع الحقوق محفوظة |
+                <a href="https://www.facebook.com/YASmarketingagency" target="_blank"
+                    class="text-brand-champagne hover:text-white transition-colors font-semibold">
+                    Yas Marketing Agency
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" onclick="if(event.target === this) window.closeModal()"
+        class="hidden fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-0 sm:p-4 backdrop-blur-sm">
+        <div onclick="event.stopImmediatePropagation()"
+            class="modal-pop bg-brand-alabaster rounded-sm max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl border border-brand-border">
+            <div class="px-8 py-5 border-b border-brand-border bg-white flex items-center justify-between gap-4">
+                <div id="modalTitle" class="text-2xl font-normal text-brand-plum"></div>
+                <div class="flex items-center">
+                    <button onclick="window.closeModal()"
+                        class="text-gray-400 hover:text-gray-600 p-1 transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="modalContent" class="flex-1 p-4 sm:p-8 overflow-auto">
+                <div id="productsContainer" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            </div>
+            <div
+                class="px-8 py-4 border-t border-brand-border bg-white text-center text-xs text-brand-muted font-light">
+                أضيفي المنتجات المفضلة للسلة، واكتبي الملاحظات قبل إرسال الطلب عبر الواتساب.
+            </div>
+        </div>
+    </div>
+
+    <!-- Phone Number Modal -->
+    <div id="phoneModal"
+        class="hidden fixed inset-0 z-[150] items-center justify-center bg-black/75 backdrop-blur-sm p-4">
+        <div onclick="event.stopImmediatePropagation()"
+            class="modal-pop bg-white w-full max-w-md rounded-sm p-6 shadow-2xl border border-brand-border">
+            <div class="text-center">
+                <div
+                    class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-champagneLight text-brand-plum">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                </div>
+                <h3 class="mt-4 text-xl font-medium text-gray-900">تأكيد بيانات التواصل</h3>
+                <p class="mt-2 text-xs text-brand-muted font-light leading-relaxed">
+                    يرجى كتابة الاسم ورقم الهاتف لمتابعة طلبكِ وتأكيده عبر الواتساب.
+                </p>
+            </div>
+            <div class="mt-6 space-y-4 text-right" dir="rtl">
+                <div>
+                    <label class="mb-1.5 block text-sm font-medium text-gray-700">اسم العميلة <span
+                            class="text-red-500">*</span></label>
+                    <input id="customerNameInput" type="text" placeholder="الاسم الكامل"
+                        class="w-full rounded-sm border border-brand-border p-3 text-sm outline-none focus:border-brand-plum text-right font-light" />
+                </div>
+                <div>
+                    <label class="mb-1.5 block text-sm font-medium text-gray-700">رقم الهاتف <span
+                            class="text-red-500">*</span></label>
+                    <input type="tel" id="customerPhoneInput" dir="ltr" placeholder="مثال: 01204431632"
+                        class="w-full rounded-sm border border-brand-border bg-gray-50 p-3 text-right text-base outline-none focus:border-brand-plum focus:bg-white transition font-light">
+                </div>
+                <p id="phoneErrorMsg" class="mt-1 text-xs text-red-600 hidden">يرجى إدخال رقم هاتف صالح</p>
+            </div>
+            <div class="mt-8 flex gap-3" dir="rtl">
+                <button onclick="confirmPhoneAndSend()"
+                    class="flex-1 btn-gold-premium py-3 font-semibold text-white shadow-sm flex items-center justify-center gap-2 text-sm">
+                    <i class="fab fa-whatsapp text-base"></i> تأكيد وإرسال
+                </button>
+                <button onclick="closePhoneModal(true)"
+                    class="flex-1 rounded-sm border border-gray-300 bg-white py-3 font-semibold text-gray-700 hover:bg-gray-50 transition text-sm">إلغاء</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal Drawer -->
+    <div id="cartModal" onclick="if(event.target === this) window.closeCart()"
+        class="hidden fixed inset-0 bg-black/75 z-[120] items-stretch justify-end p-0 sm:p-4 backdrop-blur-sm">
+        <aside onclick="event.stopImmediatePropagation()"
+            class="cart-drawer flex h-full w-full max-w-xl flex-col bg-[#FAF7FC] shadow-2xl sm:rounded-sm overflow-hidden border-l border-brand-border">
+
+            <!-- Header -->
+            <div class="flex items-center justify-between border-b border-brand-border bg-white px-6 py-5 text-right"
+                dir="rtl">
+                <div>
+                    <p class="text-xs font-semibold tracking-widest text-brand-plum uppercase">سلة المشتريات</p>
+                    <h2 class="text-xl font-medium text-gray-900 mt-0.5">حقيبة التسوق</h2>
+                </div>
+                <button onclick="window.closeCart()"
+                    class="flex h-9 w-9 items-center justify-center rounded-full border border-gray-100 text-gray-500 hover:text-brand-plum hover:border-brand-plum/30 transition-colors">
+                    <i class="fas fa-times text-base"></i>
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1 overflow-auto px-4 py-6 sm:px-6 space-y-6 text-right" dir="rtl">
+                <!-- Empty Cart State -->
+                <div id="emptyCart"
+                    class="hidden rounded-sm border border-dashed border-brand-border bg-white p-8 text-center">
+                    <div
+                        class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-champagneLight text-brand-plum">
+                        <i class="fas fa-shopping-basket text-xl"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900">سلتكِ فارغة حالياً</h3>
+                    <p class="mt-2 text-xs text-brand-muted font-light">أضيفي بعضاً من منتجاتنا الطبيعية لتبدأي العناية
+                        ببشرتكِ.</p>
+                    <button
+                        onclick="window.closeCart(); document.getElementById('products').scrollIntoView({behavior: 'smooth'})"
+                        class="mt-6 btn-gold-premium px-6 py-2.5 text-xs font-semibold">تصفح المنتجات</button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div id="cartItems" class="space-y-4"></div>
+
+                <!-- Checkout Options & Fields -->
+                <div id="cartCheckout" class="space-y-5">
+                    <div class="rounded-sm bg-white p-5 shadow-sm border border-brand-border">
+                        <h3 class="mb-4 text-sm font-semibold text-gray-900 border-b border-brand-border pb-2">عنوان
+                            التوصيل بالتفصيل</h3>
+
+                        <!-- Delivery Fields -->
+                        <div id="deliveryFields" class="mt-4 text-right">
+                            <label class="mb-1.5 block text-xs font-medium text-brand-muted">العنوان (الشارع، رقم
+                                العمارة، الشقة، علامات مميزة)... <span class="text-red-500">*</span></label>
+                            <textarea id="customerNotesDelivery" rows="3"
+                                class="w-full resize-none rounded-sm border border-brand-border bg-gray-50 p-3 outline-none focus:border-brand-plum text-sm font-light placeholder-gray-400 transition-colors"
+                                placeholder="اكتبي العنوان الكامل هنا للتوصيل السريع..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Cart Totals -->
+                    <div class="rounded-sm bg-white p-5 shadow-sm border border-brand-border text-right" dir="rtl">
+                        <div class="flex items-center justify-between py-2 text-sm text-brand-muted">
+                            <span>المجموع الفرعي</span>
+                            <strong id="cartSubtotal" class="text-gray-900 font-medium font-mono">0 ج.م</strong>
+                        </div>
+
+                        <div
+                            class="mt-2 flex items-center justify-between border-t border-gray-100 pt-4 text-lg font-medium">
+                            <span>الإجمالي الكلي</span>
+                            <strong id="cartTotal" class="text-brand-plum font-semibold font-mono">0 ج.م</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer/Submit Button -->
+            <div class="border-t border-brand-border bg-white px-5 py-4 sm:px-6">
+                <p id="cartError" class="mb-2 min-h-5 text-xs font-semibold text-red-600 text-center"></p>
+                <button onclick="window.requestPhoneBeforeOrder()"
+                    class="flex w-full items-center justify-center gap-3 bg-green-600 hover:bg-green-700 py-3.5 text-base font-semibold text-white shadow-md transition rounded-sm duration-300">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span class="tracking-wider">إرسال الطلب وتأكيد الحجز</span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
