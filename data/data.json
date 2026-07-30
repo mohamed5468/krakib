@@ -10,355 +10,413 @@
   "menu": {
     "face_care": {
       "title": "العناية بالوجه والمسام",
-      "image": "images/product_serum.png",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
       "items": [
         {
           "name": "Face serum",
           "price": 250,
           "oldPrice": 300,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "يحتوي على 1٪ هيالورونيك أسيد لترطيب مكثف و7٪ نياسيناميد للمساعدة على تقليل مظهر المسام، وتحسين ملمس البشرة، وتقليل ظهور الحبوب"
         },
         {
           "name": "skin moisturizer For normal and dry skin",
           "price": 170,
           "oldPrice": 200,
-          "image": "images/product_cream.png",
+          "image": "https://i.ibb.co/C54tJqfk/product-cream.jpg",
           "description": "يحتوي على زبدة الشيا لتغذية البشرة بعمق وزيت اللوز الحلو لمنحها نعومة وترطيبًا يدوم مع دعم حاجز البشرة"
         },
         {
           "name": "Cleanser",
           "price": 120,
           "oldPrice": 150,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "غسول رغوي لطيف بحمض الساليسيليك للمساعدة على تنظيف المسام وتقليل ظهور الحبوب والتحكم في الدهون، مع زيت بذور العنب للحفاظ على ترطيب البشرة"
         },
         {
           "name": "Micellar water",
           "price": 100,
           "oldPrice": 150,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "بتقنية الميسيلار التي تزيل المكياج وواقي الشمس والشوائب بلطف مع الحفاظ على ترطيب البشرة الطبيعي"
         }
       ]
     },
     "eye_lip_care": {
       "title": "العناية بالعين والشفاه",
-      "image": "images/product_eye.png",
+      "image": "https://i.ibb.co/9mQJpB4f/product-eye.jpg",
       "items": [
         {
           "name": "Lash therapy",
           "price": 150,
           "oldPrice": 180,
-          "image": "images/product_eye.png",
+          "image": "https://i.ibb.co/9mQJpB4f/product-eye.jpg",
           "description": "جل كريم خفيف بزيت الورد البري والجوجوبا يمنح ترطيبًا متوازنًا دون ملمس دهني، ومناسب للبشرة المختلطة والدهنية والمعرضة للحبوب"
         },
         {
           "name": "Lip balm",
           "price": 65,
           "oldPrice": 80,
-          "image": "images/product_eye.png",
+          "image": "https://i.ibb.co/9mQJpB4f/product-eye.jpg",
           "description": "يحتوي على زيت جوز الهند وزبدة الكاكاو لترطيب الشفاه بعمق، مع شمع العسل للحفاظ على الترطيب وفيتامين E لتنعيمها وحمايتها"
         },
         {
           "name": "Eye cream",
           "price": 190,
           "oldPrice": 220,
-          "image": "images/product_eye.png",
+          "image": "https://i.ibb.co/9mQJpB4f/product-eye.jpg",
           "description": "يحتوي على الكافيين للمساعدة على تقليل مظهر الانتفاخ، والبابونج لتهدئة محيط العين، وزيت الورد البري لتغذية البشرة وتحسين ملمسها"
         }
       ]
     },
     "hand_nail_care": {
       "title": "العناية باليدين والأظافر",
-      "image": "images/product_hand.png",
+      "image": "https://i.ibb.co/HQxZtHy/product-hand.jpg",
       "items": [
         {
           "name": "skin moisturizer",
           "price": 140,
           "oldPrice": 170,
-          "image": "images/product_hand.png",
+          "image": "https://i.ibb.co/HQxZtHy/product-hand.jpg",
           "description": "يحتوي على زيت جوز الهند وزيت اللوز الحلو لترطيب اليدين بعمق، وتنعيم الخشونة، وترك اليدين ناعمتين ومغذيتين"
         },
         {
           "name": "Nail oil",
           "price": 150,
           "oldPrice": 180,
-          "image": "images/product_hand.png",
+          "image": "https://i.ibb.co/HQxZtHy/product-hand.jpg",
           "description": "مزيج من زيت الجوجوبا واللوز الحلو والأرجان مع فيتامين E لتغذية الجلد المحيط بالأظافر، وتقوية الأظافر الهشة، ودعم نموها الصحي"
         },
         {
           "name": "Hand cream",
           "price": 100,
           "oldPrice": 120,
-          "image": "images/product_hand.png",
+          "image": "https://i.ibb.co/HQxZtHy/product-hand.jpg",
           "description": "يحتوي على زيت جوز الهند وزيت اللوز الحلو لترطيب اليدين بعمق، وتنعيم الخشونة، وترك اليدين ناعمتين ومغذيتين"
         }
       ]
     },
     "by_mahitap": {
       "title": "BY:Mahitap",
-      "image": "images/product_serum.png",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
       "items": [
         {
           "name": "رول عطري ببتلات الورد",
           "price": 115,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "(تعطير أي أريا برايفيت) و(أماكن النبض) ✨"
         },
         {
           "name": "مجموعة لميس لعلاج الشعر",
           "price": 1200,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
           "description": "عبارة عن: شامبو - بلسم - حمام كريم - سيرم ✨"
         },
         {
           "name": "هير سيرم (معالج للتقصف والهيشان)",
           "price": 330,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/wN2t6NnL/mahitap-hair-serum.jpg",
           "description": "معالج للتقصف والهيشان ✨"
         },
         {
           "name": "فرشاة مصنوعة من خشب طبيعي",
           "price": 210,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/DHbRcZrr/mahitap-wooden-comb.jpg",
           "description": "مصنوعة من خشب طبيعي وسنون طبيعية ✨"
         },
         {
           "name": "مجموعة سيرم لبان الدكر العُماني",
           "price": 470,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "لشد البشرة والنضارة ✨"
         },
         {
           "name": "هير ستيك طبيعي مع فرشاة للبيبي",
           "price": 250,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "بعطر فروتي لتقليل هيشان البيبي هير، يستخدم للأطفال من سن ٣ سنوات ✨"
         },
         {
           "name": "زبدة جسم علاجية",
           "price": 220,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "بتعالج جفاف الجلد والحبوب وآثارها. مكوناتها كلها طبيعية مثل: زبدة الشيا وجوز الهند والعرقسوس واليوريا ✨"
         },
         {
           "name": "باكج حمام مغربي كامل",
           "price": 950,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "منتجات أصلية 100% ✨"
         },
         {
           "name": "اسكراب الكولاجين",
           "price": 250,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "أول اسكراب للبشرة الحساسة بمكونات طبيعية مثل: زبدة الشيا والسمسم والكولاجين وخلاصة الشاي الأخضر ومكونات أخرى ✨"
         },
         {
           "name": "ديودرنت ستيك عطر فروتي",
           "price": 210,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "لأول مرة ديودرنت ثبات من ٦ ساعات حتى ١٢ ساعة ✅ يناسب جميع أنواع البشرة ✨"
         },
         {
           "name": "ديودرنت كريمي عطر فرنسي نسائي",
           "price": 230,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "في كل ما يوحي بكل ما هو أنثوي 🎀 يناسب جميع أنواع البشرة. ثبات من ٦ ساعات حتى ١٢ ساعة ✨"
         },
         {
           "name": "صن بلوك (واقي + تفتيح + ترطيب)",
           "price": 190,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "مكوناته: هيدروسول كاموميل وزيت الجزر وزبدة شيا وشمع ewax وفيتامين E وبانثينول B5 وأكسيد زنك. خالي من فيتامين A ومشتقاته لينفع للحامل والمرضع 🫶🏻"
         },
         {
           "name": "دراي اويل ببتلات الورد عطر باث اند بادي",
           "price": 330,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/sJsz7tMn/mahitap-dry-oil.jpg",
           "description": "ملطف ومرطب ومعالج للاسترتش ماركس والسلوليت ✨"
         },
         {
           "name": "بادي بالم",
           "price": 210,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/Cs26gwTP/mahitap-body-balm.jpg",
           "description": "ملطف ومعطر للأريا برايفيت ومعالج لجفاف الجلد والاسترتش ماركس والسلوليت ✨"
         },
         {
           "name": "ليب جلاس فواكه",
           "price": 99,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "كل لون بيحكي حكاية بنت فينا 👑 غير قابل للتذوق ❌ بس ريحته حلوة 😂 وأعلى بيجمنت هتقابلوه ✨"
         },
         {
           "name": "سيرم للبشرة بخلاصة الهيالورونيك اسيد & الساليسيلك",
           "price": 195,
           "oldPrice": 250,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "للنضارة والترطيب وعلاج المسام والشوائب ✨"
         }
       ]
     },
     "hair_care": {
       "title": "منتجات الهير",
-      "image": "images/product_serum.png",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
       "items": [
         {
           "name": "فرشه سيلكون لتدليك فروة الشعر",
           "price": 60,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "باكدچ عناية بالشعر",
           "price": 435,
           "oldPrice": 480,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "عباره عن: فوطه ميكروفايبر لتنشيف الشعر، بونيه ستان للحافظ علي رطوبة الشعر، هير ميست لتعطير الشعر، فرشه سيلكون لتدليك فروة الشعر"
         },
         {
           "name": "مشط خشب طبيعي 🪵",
           "price": 65,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "توكه ستان تقيل",
           "price": 30,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "بونيه وتر بروف",
           "price": 25,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "بونيه ستان للحفاظ علي رطوبة الشعر وبيقلل الهيشان",
           "price": 135,
           "oldPrice": 150,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "فوطه نانو فايبر لتنشيف الشعر",
           "price": 115,
           "oldPrice": 135,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "باكدچ هير تعطير وتنشيف وتسريح فقط✅",
           "price": 295,
           "oldPrice": 330,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "معطر شعر بعطور مختلفه من ايمليا",
           "price": 125,
           "oldPrice": 150,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         }
       ]
     },
     "face_shaving": {
       "title": "شيفينج للوجه",
-      "image": "images/product_serum.png",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
       "items": [
         {
           "name": "شيفينج فلامنجو للوجه الاوريچينال",
           "price": 280,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "شيفينج اليس للوجه الشكل الجديد",
           "price": 95,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/6cVXZLbX/shaving-alice-face.jpg",
           "description": ""
         },
         {
           "name": "شيفينج أبلين الاوريچينال للوجه",
           "price": 350,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "شيفينج ترينا للوجهه",
           "price": 220,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         },
         {
           "name": "شيفينج اليس للوجه",
           "price": 80,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": ""
         }
       ]
     },
     "body_shaving": {
       "title": "شيفينج للجسم",
-      "image": "images/product_serum.png",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
       "items": [
         {
           "name": "شيفنج أليس دراع وقطعة غيار 1️⃣",
           "price": 180,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/jvtR01nK/shaving-alice-purple-deluxe.jpg",
           "description": ""
         },
         {
           "name": "شيفينج اليس للجسم اتنين مكينه 🌸",
           "price": 210,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/hFzZk0B7/shaving-alice-blue-two.jpg",
           "description": ""
         },
         {
           "name": "شفينج اليس للجسم دراع وقطعة غيار 1️⃣",
           "price": 180,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/n8D2bDhg/shaving-alice-green-deluxe.jpg",
           "description": ""
         },
         {
           "name": "اليس للجسم بشكل مختلف دراع وقطعة غيار 1️⃣",
           "price": 180,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/wrxQG4LM/shaving-alice-blue-ergonomic.jpg",
           "description": ""
         },
         {
           "name": "شيفينج اليس للجسم الموڤ اتنين مكينه🌸",
           "price": 210,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/0pmSdW6s/shaving-alice-purple.jpg",
           "description": ""
         },
         {
           "name": "اشكال مختلفه من مكينه اليس للجسم🌸",
           "price": 180,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/FLN6mcqt/shaving-alice-boxes.jpg",
           "description": "السعر يبدأ من ١٨٠ حتى ٢١٠ج"
         },
         {
           "name": "شفينج انتوشن للجسم الألماني🩵",
           "price": 540,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/5h1YsFYQ/shaving-intuition-hand.png",
           "description": ""
         },
         {
           "name": "دراع مكينه كامله 🌸 وغيار 1️⃣ شفينج ألماني اصلي",
           "price": 540,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/6JrqK0LQ/shaving-intuition-boxes.png",
           "description": ""
         },
         {
           "name": "شيفينج اليس بالبادي لوشن 💜🧴",
           "price": 295,
-          "image": "images/product_serum.png",
+          "image": "https://i.ibb.co/1Yjq8Wvm/shaving-alice-lotion.jpg",
           "description": "مكينه كامله بدراع واتنين غيار🌸"
         }
       ]
+    },
+    "moroccan_products": {
+      "title": "منتجات مغربية",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "items": [
+        {
+          "name": "باكدچ الحمام المغربي كامل للعرايس والمتزوجين",
+          "price": 860,
+          "oldPrice": 950,
+          "image": "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
+          "description": "عنايه كامله لعلاج جلد الوزه والجلد الميت وجفاف الجلد وتوحيد لون الجلد وعلاج الجسم والبوتي من الحبوب واثارها 🍑🙊💜"
+        },
+        {
+          "name": "ليفة مغربية كسال خلود درجة أولى 🩷🌸",
+          "price": 150,
+          "oldPrice": 180,
+          "image": "https://i.ibb.co/RG2Lmtwz/moroccan-khouloud-loofah.jpg",
+          "description": ""
+        },
+        {
+          "name": "باكدچ بكيني عنايه كامله 🩵🌸",
+          "price": 820,
+          "oldPrice": 880,
+          "image": "https://i.ibb.co/DfXMrQvj/bikini-package.jpg",
+          "description": "صابونة الطاوس المغربية الأصلية 🇲🇦 + كينتا وزيت الورد لتفتيح الأريا برايفيت 🍓 + مسك عود سعودي أصلي لتعطير الأماكن البرايفيت 🍓"
+        },
+        {
+          "name": "صابونة الطاوس المغربية وغسول للبكيني",
+          "price": 220,
+          "oldPrice": 250,
+          "image": "https://i.ibb.co/84QM3Tts/taous-bikini-wash.jpg",
+          "description": "صابونة الطاوس المغربية الأصلية 🇲🇦 مع غسول للبكيني أريا بـ ٤ أنواع مختلفة 💜🍓"
+        },
+        {
+          "name": "مجموعة كينتا وزيت الورد + مسك سعودي فانيليا 🍓🤍",
+          "price": 600,
+          "oldPrice": 730,
+          "image": "https://i.ibb.co/jZhNQPyy/kenta-rose-musk.jpg",
+          "description": "كينتا وزيت الورد لتفتيح الأريا برايفيت مع مسك سعودي فانيليا للتعطير 🤍"
+        },
+        {
+          "name": "ليفة مغربية جديدة للجلد الحساس 🇲🇦",
+          "price": 200,
+          "oldPrice": 235,
+          "image": "https://i.ibb.co/9kN6CRGj/moroccan-sensitive-loofah.jpg",
+          "description": "للجلد الحساس جداً ✨"
+        }
+      ]
+    },
+    "splashes": {
+      "title": "الاسبيلاشات",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "items": []
+    },
+    "makeup": {
+      "title": "الميك اب",
+      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "items": []
     }
   }
 }
