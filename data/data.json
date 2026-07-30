@@ -198,6 +198,167 @@
           "description": "للنضارة والترطيب وعلاج المسام والشوائب ✨"
         }
       ]
+    },
+    "hair_care": {
+      "title": "منتجات الهير",
+      "image": "images/product_serum.png",
+      "items": [
+        {
+          "name": "فرشه سيلكون لتدليك فروة الشعر",
+          "price": 60,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "باكدچ عناية بالشعر",
+          "price": 435,
+          "oldPrice": 480,
+          "image": "images/product_serum.png",
+          "description": "عباره عن: فوطه ميكروفايبر لتنشيف الشعر، بونيه ستان للحافظ علي رطوبة الشعر، هير ميست لتعطير الشعر، فرشه سيلكون لتدليك فروة الشعر"
+        },
+        {
+          "name": "مشط خشب طبيعي 🪵",
+          "price": 65,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "توكه ستان تقيل",
+          "price": 30,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "بونيه وتر بروف",
+          "price": 25,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "بونيه ستان للحفاظ علي رطوبة الشعر وبيقلل الهيشان",
+          "price": 135,
+          "oldPrice": 150,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "فوطه نانو فايبر لتنشيف الشعر",
+          "price": 115,
+          "oldPrice": 135,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "باكدچ هير تعطير وتنشيف وتسريح فقط✅",
+          "price": 295,
+          "oldPrice": 330,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "معطر شعر بعطور مختلفه من ايمليا",
+          "price": 125,
+          "oldPrice": 150,
+          "image": "images/product_serum.png",
+          "description": ""
+        }
+      ]
+    },
+    "face_shaving": {
+      "title": "شيفينج للوجه",
+      "image": "images/product_serum.png",
+      "items": [
+        {
+          "name": "شيفينج فلامنجو للوجه الاوريچينال",
+          "price": 280,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج اليس للوجه الشكل الجديد",
+          "price": 95,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج أبلين الاوريچينال للوجه",
+          "price": 350,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج ترينا للوجهه",
+          "price": 220,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج اليس للوجه",
+          "price": 80,
+          "image": "images/product_serum.png",
+          "description": ""
+        }
+      ]
+    },
+    "body_shaving": {
+      "title": "شيفينج للجسم",
+      "image": "images/product_serum.png",
+      "items": [
+        {
+          "name": "شيفنج أليس دراع وقطعة غيار 1️⃣",
+          "price": 180,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج اليس للجسم اتنين مكينه 🌸",
+          "price": 210,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شفينج اليس للجسم دراع وقطعة غيار 1️⃣",
+          "price": 180,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "اليس للجسم بشكل مختلف دراع وقطعة غيار 1️⃣",
+          "price": 180,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج اليس للجسم الموڤ اتنين مكينه🌸",
+          "price": 210,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "اشكال مختلفه من مكينه اليس للجسم🌸",
+          "price": 180,
+          "image": "images/product_serum.png",
+          "description": "السعر يبدأ من ١٨٠ حتى ٢١٠ج"
+        },
+        {
+          "name": "شفينج انتوشن للجسم الألماني🩵",
+          "price": 540,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "دراع مكينه كامله 🌸 وغيار 1️⃣ شفينج ألماني اصلي",
+          "price": 540,
+          "image": "images/product_serum.png",
+          "description": ""
+        },
+        {
+          "name": "شيفينج اليس بالبادي لوشن 💜🧴",
+          "price": 295,
+          "image": "images/product_serum.png",
+          "description": "مكينه كامله بدراع واتنين غيار🌸"
+        }
+      ]
     }
   }
 }
