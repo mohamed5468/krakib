@@ -692,17 +692,6 @@ function renderCart() {
                     </div>
                 </div>
 
-                <div class="pt-2 border-t border-brand-border">
-                    <button type="button" onclick="this.nextElementSibling.classList.toggle('hidden')"
-                        class="w-full rounded-sm border border-brand-border bg-white hover:bg-brand-champagneLight text-right font-medium text-brand-plum px-4 py-2.5 text-xs transition-colors duration-300">
-                        <span>${extrasButtonText}</span>
-                        ${selectedExtrasText ? `<span class="block mt-1 text-[10px] text-brand-plum font-semibold">${selectedExtrasText}</span>` : ""}
-                    </button>
-                    <div class="hidden mt-3 space-y-2">
-                        ${extrasHtml}
-                    </div>
-                </div>
-
                 <textarea rows="2" oninput="window.updateCartItemNote('${encodedId}', this.value)"
                     class="w-full resize-none rounded-sm border border-brand-border bg-brand-alabaster p-3 text-xs outline-none focus:border-brand-plum focus:bg-white transition"
                     placeholder="ملاحظات خاصة بالمنتج (مثال: كتابة كارت الإهداء...)">${escapeHtml(item.note || "")}</textarea>

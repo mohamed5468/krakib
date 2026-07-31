@@ -10,7 +10,7 @@
   "menu": {
     "by_mahitap": {
       "title": "BY:Mahitap",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
       "items": [
         {
           "name": "رول عطري ببتلات الورد",
@@ -113,7 +113,7 @@
     },
     "hair_care": {
       "title": "منتجات الهير",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/DHbRcZrr/mahitap-wooden-comb.jpg",
       "items": [
         {
           "name": "فرشه سيلكون لتدليك فروة الشعر",
@@ -178,7 +178,7 @@
     },
     "face_shaving": {
       "title": "شيفينج للوجه",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/6cVXZLbX/shaving-alice-face.jpg",
       "items": [
         {
           "name": "شيفينج فلامنجو للوجه الاوريچينال",
@@ -214,7 +214,7 @@
     },
     "body_shaving": {
       "title": "شيفينج للجسم",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/hFzZk0B7/shaving-alice-blue-two.jpg",
       "items": [
         {
           "name": "شيفنج أليس دراع وقطعة غيار 1️⃣",
@@ -274,7 +274,7 @@
     },
     "moroccan_products": {
       "title": "منتجات مغربية",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
       "items": [
         {
           "name": "باكدچ الحمام المغربي كامل للعرايس والمتزوجين",
@@ -322,12 +322,115 @@
     },
     "splashes": {
       "title": "الاسبيلاشات",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
-      "items": []
+      "image": "https://i.ibb.co/4Z4qNqMg/cool-girl.jpg",
+      "items": [
+        {
+          "name": "اسبيلاش Cool Girl - Carolina Herrera",
+          "price": 280,
+          "image": "https://i.ibb.co/4Z4qNqMg/cool-girl.jpg",
+          "description": "عطر جذاب ومميز ومثير يجمع بين اللوز والقهوة والياسمين والكاكاو"
+        },
+        {
+          "name": "اسبيلاش Baccarat Rouge 540 - Maison Francis Kurkdjian",
+          "price": 280,
+          "image": "https://i.ibb.co/ym0kTmf3/baccarat-rouge.jpg",
+          "description": "مزيج ساحر وفريد من الياسمين والزعفران والعنبر وخشب الأرز"
+        },
+        {
+          "name": "اسبيلاش Black Opium - YSL",
+          "price": 280,
+          "image": "https://i.ibb.co/NgxQzqJx/black-opium.jpg",
+          "description": "عطر شرقي حار غامض ودافئ يجمع بين القهوة السوداء والفانيليا والزهور البيضاء"
+        },
+        {
+          "name": "اسبيلاش Gucci Flora - Gucci",
+          "price": 280,
+          "image": "https://i.ibb.co/vCt7jyW4/gucci-flora.jpg",
+          "description": "باقة زهرية أنثوية رقيقة ومنعشة من اليوسفي والفاوانيا والورد والباتشولي"
+        },
+        {
+          "name": "اسبيلاش Fantasy - Britney Spears",
+          "price": 280,
+          "image": "https://i.ibb.co/why8DXsC/fantasy.jpg",
+          "description": "مزيج حلو ولذيذ من الكيوي والليتشي والشوكولاتة البيضاء والكب كيك والمسك"
+        },
+        {
+          "name": "اسبيلاش Fashion Girl",
+          "price": 280,
+          "image": "https://i.ibb.co/fYbDdcBz/fashion-girl.jpg",
+          "description": "عطر منعش ولطيف بنفحات زهرية وفواكهية ناعمة تمنحك إحساساً بالأنوثة والجمال"
+        },
+        {
+          "name": "اسبيلاش Victoria Secret - Bombshell",
+          "price": 280,
+          "image": "https://i.ibb.co/ynLs3KCw/bombshell.jpg",
+          "description": "مزيج فواكه استوائية منعشة من الباشن فروت والجريب فروت الأصفر مع زهور الأوركيد والفاوانيا المسكية"
+        },
+        {
+          "name": "اسبيلاش ذا بودي شوب الاوريچينال - Strawberry & Vanilla",
+          "price": 190,
+          "image": "https://i.ibb.co/n8gYX7QV/body-shop-1.jpg",
+          "description": "مجموعة مميزة تضم روائح الفراولة والونيلية المنعشة لترطيب وتعطير الجسم برائحة ساحرة تدوم طويلاً"
+        },
+        {
+          "name": "اسبيلاش ذا بودي شوب الاوريچينال - Vanilla & White Musk",
+          "price": 190,
+          "image": "https://i.ibb.co/KczQzq5j/body-shop-2.jpg",
+          "description": "باقة دافئة وناعمة تجمع بين عبير الفانيليا الكلاسيكي والمسك الأبيض الراقي لإطلالة أنثوية جذابة"
+        },
+        {
+          "name": "اسبيلاش ذا بودي شوب الاوريچينال - Blue Musk & Strawberry",
+          "price": 190,
+          "image": "https://i.ibb.co/sv9tr9rn/body-shop-3.jpg",
+          "description": "مزيج منعش من المسك الأزرق الفاخر ورائحة الفراولة الطبيعية المنعشة لتجربة عطرية لا تُنسى"
+        },
+        {
+          "name": "اسبيلاش لاروز - Coco Banana & Candy Bar",
+          "price": 195,
+          "image": "https://i.ibb.co/bjHD057G/larose-1.jpg",
+          "description": "روائح صيفية مبهجة ومنعشة بنكهات الموز مع الكوكو وحلوى كاندي بار اللذيذة"
+        },
+        {
+          "name": "اسبيلاش لاروز - Marshmallow Yum",
+          "price": 195,
+          "image": "https://i.ibb.co/FbQ2pMPH/larose-2.jpg",
+          "description": "عبير حلو ولذيذ برائحة المارشميلو الدافئة التي تمنحك إحساساً بالنعومة والجمال والجاذبية"
+        },
+        {
+          "name": "اسبيلاش تروبيل - Tropelle Body Mist",
+          "price": 195,
+          "image": "https://i.ibb.co/pryKHgFj/larose-3.jpg",
+          "description": "مجموعة معطرات جسم تروبيل المتنوعة والمنعشة لتمنحك انتعاشاً يدوم طوال اليوم"
+        },
+        {
+          "name": "اسبيلاش ليديز سيكريت وتروبيل - Strawberry & Aromatic Night",
+          "price": 195,
+          "image": "https://i.ibb.co/DDdvnxkW/larose-4.jpg",
+          "description": "مزيج ساحر يجمع بين معطر ليديز سيكريت بالفراولة ومعطر تروبيل أروماتيك نايت"
+        },
+        {
+          "name": "اسبيلاش ليديز سيكريت - After Party & Showtime Angel",
+          "price": 195,
+          "image": "https://i.ibb.co/pNxBFdW/larose-5.jpg",
+          "description": "روائح جذابة ومثيرة للمناسبات الخاصة تمنحك حضوراً وتألقاً لافتاً"
+        },
+        {
+          "name": "اسبيلاش لاروز - B.Rouge 540 & Coco Vanilla",
+          "price": 195,
+          "image": "https://i.ibb.co/qYYNng6j/larose-6.jpg",
+          "description": "مجموعة معطرات لاروز بروائح كوكو فانيليا المنعشة وعبير بي روج 540 الفاخر"
+        },
+        {
+          "name": "اسبيلاش لاروز - Eilish & Strawberry Cream Cake",
+          "price": 195,
+          "image": "https://i.ibb.co/sdyS1TrP/larose-7.jpg",
+          "description": "مزيج رائع يجمع بين عطر إيليش الدافئ ورائحة كيكة الفراولة بالكريمة اللذيذة"
+        }
+      ]
     },
     "makeup": {
       "title": "الميك اب",
-      "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+      "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
       "items": []
     }
   }
