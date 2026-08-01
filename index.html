@@ -164,8 +164,8 @@
 
                 <h1
                     class="serif-font text-5xl sm:text-6xl md:text-7xl font-light leading-none tracking-tight text-brand-plum">
-                    𝐁𝐨𝐧𝐣𝐨𝐮𝐫 𝐛𝐨𝐮𝐭𝐢𝐪𝐮𝐞 𝐌𝐚𝐡𝐢𝐭𝐚𝐩𝐬𝐚𝐚𝐝 
-𝐂𝐨𝐬𝐦𝐞𝐭𝐢𝐜 𝐅𝐨𝐫 𝐰𝐨𝐦𝐞𝐧✨💜🪻 <br>
+                    𝐁𝐨𝐧𝐣𝐨𝐮𝐫 𝐛𝐨𝐮𝐭𝐢𝐪𝐮𝐞 𝐌𝐚𝐡𝐢𝐭𝐚𝐩𝐬𝐚𝐚𝐝
+                    𝐂𝐨𝐬𝐦𝐞𝐭𝐢𝐜 𝐅𝐨𝐫 𝐰𝐨𝐦𝐞𝐧✨💜🪻 <br>
                     <span class="italic font-normal text-brand-champagne text-4xl sm:text-5xl md:text-6xl">
                         أجمل فطره بعد التوحيد ،، الانوثه✨</span>
                 </h1>
@@ -719,11 +719,13 @@
                 <!-- Checkout Options & Fields -->
                 <div id="cartCheckout" class="space-y-5">
                     <div class="rounded-sm bg-white p-5 shadow-sm border border-brand-border">
-                        <h3 class="mb-4 text-sm font-semibold text-gray-900 border-b border-brand-border pb-2">عنوان التوصيل بالتفصيل</h3>
+                        <h3 class="mb-4 text-sm font-semibold text-gray-900 border-b border-brand-border pb-2">عنوان
+                            التوصيل بالتفصيل</h3>
 
                         <!-- Delivery Fields -->
                         <div id="deliveryFields" class="mt-4 text-right">
-                            <label class="mb-1.5 block text-xs font-medium text-brand-muted">العنوان (الشارع، رقم العمارة، الشقة، علامات مميزة)... <span class="text-red-500">*</span></label>
+                            <label class="mb-1.5 block text-xs font-medium text-brand-muted">العنوان (الشارع، رقم
+                                العمارة، الشقة، علامات مميزة)... <span class="text-red-500">*</span></label>
                             <textarea id="customerNotesDelivery" rows="3"
                                 class="w-full resize-none rounded-sm border border-brand-border bg-gray-50 p-3 outline-none focus:border-brand-plum text-sm font-light placeholder-gray-400 transition-colors"
                                 placeholder="اكتبي العنوان الكامل هنا للتوصيل السريع..."></textarea>
@@ -755,6 +757,49 @@
                 </button>
             </div>
         </aside>
+    </div>
+
+    <!-- Image Lightbox & Gallery Modal -->
+    <div id="imageLightboxModal" onclick="if(event.target === this) window.closeLightbox()"
+        class="hidden fixed inset-0 z-[300] bg-black/95 backdrop-blur-md flex flex-col justify-between items-center p-4 sm:p-6 transition-all duration-300">
+
+        <!-- Top Bar -->
+        <div class="w-full max-w-5xl flex items-center justify-between text-white py-2 px-4 z-10" dir="rtl">
+            <div class="flex items-center gap-3">
+                <span class="text-brand-champagne font-semibold text-sm sm:text-base"><i
+                        class="fas fa-images ml-1.5"></i> معرض الصور</span>
+                <span id="lightboxCounter" class="bg-white/10 text-xs px-3 py-1 rounded-full font-mono text-gray-200">1
+                    / 1</span>
+            </div>
+            <button onclick="window.closeLightbox()"
+                class="text-gray-300 hover:text-white text-2xl p-2 transition-colors focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Main Display Container -->
+        <div class="relative flex-1 w-full max-w-5xl flex items-center justify-center overflow-hidden my-2">
+            <!-- Previous Button -->
+            <button onclick="window.prevLightboxImage()"
+                class="absolute left-2 sm:left-4 z-10 bg-black/50 hover:bg-black/80 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all focus:outline-none shadow-lg">
+                <i class="fas fa-chevron-left text-lg"></i>
+            </button>
+
+            <!-- Main Image -->
+            <img id="lightboxMainImage" src="" alt="Product view"
+                class="max-h-[75vh] max-w-full object-contain rounded-sm shadow-2xl transition-all duration-300 transform scale-100"
+                onerror="this.onerror=null;this.src='https://i.ibb.co/1YyrVXF9/product-serum.jpg';">
+
+            <!-- Next Button -->
+            <button onclick="window.nextLightboxImage()"
+                class="absolute right-2 sm:right-4 z-10 bg-black/50 hover:bg-black/80 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all focus:outline-none shadow-lg">
+                <i class="fas fa-chevron-right text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Bottom Thumbnails Strip -->
+        <div id="lightboxThumbnails"
+            class="w-full max-w-3xl flex items-center justify-center gap-2 overflow-x-auto py-2 px-4" dir="rtl"></div>
     </div>
 
     <script src="js/script.js"></script>

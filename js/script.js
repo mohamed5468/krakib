@@ -75,17 +75,17 @@ function checkActiveOffer() {
         activeOffer = null;
         return false;
     }
-    
+
     const now = new Date();
     const startDate = new Date(offerConfig.startDate);
     let endDate = null;
-    
+
     if (offerConfig.endDate) {
         endDate = new Date(offerConfig.endDate);
     } else if (offerConfig.startDate && offerConfig.durationHours) {
         endDate = new Date(startDate.getTime() + offerConfig.durationHours * 60 * 60 * 1000);
     }
-    
+
     if (endDate && now >= startDate && now <= endDate) {
         activeOffer = {
             ...offerConfig,
@@ -93,7 +93,7 @@ function checkActiveOffer() {
         };
         return true;
     }
-    
+
     activeOffer = null;
     return false;
 }
@@ -101,25 +101,25 @@ function checkActiveOffer() {
 function startCountdownTimer() {
     const banner = document.getElementById("offerBanner");
     if (!banner) return;
-    
+
     if (!checkActiveOffer()) {
         banner.classList.add("hidden");
         banner.classList.remove("flex");
         return;
     }
-    
+
     banner.classList.remove("hidden");
     banner.classList.add("flex");
-    
+
     const titleEl = document.getElementById("offerTitle");
     if (titleEl) {
         titleEl.textContent = `${activeOffer.title} ${activeOffer.percentage}% على كل المنتجات`;
     }
-    
+
     function updateTimer() {
         const now = new Date().getTime();
         const distance = activeOffer.calculatedEndDate.getTime() - now;
-        
+
         if (distance < 0) {
             clearInterval(timerInterval);
             banner.classList.add("hidden");
@@ -129,23 +129,23 @@ function startCountdownTimer() {
             renderCategories();
             return;
         }
-        
+
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
         const daysEl = document.getElementById("timerDays");
         const hoursEl = document.getElementById("timerHours");
         const minutesEl = document.getElementById("timerMinutes");
         const secondsEl = document.getElementById("timerSeconds");
-        
+
         if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
         if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
         if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
         if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
     }
-    
+
     updateTimer();
     const timerInterval = setInterval(updateTimer, 1000);
 }
@@ -158,13 +158,13 @@ async function loadData() {
     try {
         const response = await fetch("data/data.json");
         const data = await response.json();
-        
+
         offerConfig = data.offer;
         menuData = data.menu;
-        
+
         checkActiveOffer();
         startCountdownTimer();
-        
+
         categories = Object.keys(menuData).map(key => ({
             id: key,
             name: menuData[key].title,
@@ -244,6 +244,213 @@ window.toggleDescription = function (btn) {
     }
 };
 
+// ------------------- Lightbox & Multi-Image Gallery -------------------
+let currentLightboxImages = [];
+let currentLightboxIndex = 0;
+
+window.openLightbox = function (images, index = 0) {
+    if (!Array.isArray(images) || images.length === 0) return;
+    currentLightboxImages = images;
+    currentLightboxIndex = Number(index) || 0;
+    updateLightboxUI();
+
+    const modal = document.getElementById("imageLightboxModal");
+    if (modal) {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+    }
+};
+
+window.openLightboxEncoded = function (encodedImages, index = 0) {
+    try {
+        const images = JSON.parse(decodeURIComponent(encodedImages));
+        window.openLightbox(images, index);
+    } catch (e) {
+        console.error("Error parsing lightbox images:", e);
+    }
+};
+
+window.closeLightbox = function () {
+    const modal = document.getElementById("imageLightboxModal");
+    if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "auto";
+    }
+};
+
+window.nextLightboxImage = function () {
+    if (!currentLightboxImages.length) return;
+    currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxImages.length;
+    updateLightboxUI();
+};
+
+window.prevLightboxImage = function () {
+    if (!currentLightboxImages.length) return;
+    currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxImages.length) % currentLightboxImages.length;
+    updateLightboxUI();
+};
+
+window.selectLightboxImage = function (index) {
+    if (index >= 0 && index < currentLightboxImages.length) {
+        currentLightboxIndex = index;
+        updateLightboxUI();
+    }
+};
+
+function updateLightboxUI() {
+    const imgEl = document.getElementById("lightboxMainImage");
+    const counterEl = document.getElementById("lightboxCounter");
+    const thumbsEl = document.getElementById("lightboxThumbnails");
+
+    if (imgEl && currentLightboxImages[currentLightboxIndex]) {
+        imgEl.src = currentLightboxImages[currentLightboxIndex];
+    }
+
+    if (counterEl) {
+        counterEl.textContent = `${currentLightboxIndex + 1} / ${currentLightboxImages.length}`;
+    }
+
+    if (thumbsEl) {
+        thumbsEl.innerHTML = currentLightboxImages.map((imgSrc, i) => `
+            <button onclick="window.selectLightboxImage(${i})" 
+                class="w-14 h-14 rounded-sm border-2 overflow-hidden flex-shrink-0 transition-all ${i === currentLightboxIndex ? 'border-brand-champagne scale-105 shadow-md' : 'border-white/20 opacity-60 hover:opacity-100'}">
+                <img src="${imgSrc}" alt="Thumbnail ${i + 1}" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://i.ibb.co/1YyrVXF9/product-serum.jpg';">
+            </button>
+        `).join("");
+    }
+}
+
+document.addEventListener("keydown", function (e) {
+    const modal = document.getElementById("imageLightboxModal");
+    if (!modal || modal.classList.contains("hidden")) return;
+    if (e.key === "Escape") window.closeLightbox();
+    if (e.key === "ArrowLeft") window.prevLightboxImage();
+    if (e.key === "ArrowRight") window.nextLightboxImage();
+});
+
+window.switchCardImage = function (cardUid, imgSrc, btnEl, index, imagesJson) {
+    const mainImg = document.getElementById(cardUid);
+    if (mainImg) {
+        mainImg.style.opacity = "0.4";
+        setTimeout(() => {
+            mainImg.src = imgSrc;
+            mainImg.style.opacity = "1";
+        }, 150);
+    }
+    const thumbs = document.querySelectorAll(`.card-thumb-${cardUid}`);
+    thumbs.forEach((t, i) => {
+        if (i === index) {
+            t.classList.remove("border-brand-border", "opacity-70");
+            t.classList.add("border-brand-plum", "scale-105", "opacity-100");
+        } else {
+            t.classList.remove("border-brand-plum", "scale-105", "opacity-100");
+            t.classList.add("border-brand-border", "opacity-70");
+        }
+    });
+};
+
+function renderFacebookImageGrid(images, cardUid) {
+    if (!Array.isArray(images) || images.length === 0) return "";
+    const encoded = encodeURIComponent(JSON.stringify(images));
+    const fallbackSrc = "https://i.ibb.co/1YyrVXF9/product-serum.jpg";
+
+    if (images.length === 1) {
+        return `
+            <div class="aspect-portrait relative overflow-hidden border-b border-brand-border bg-brand-alabaster cursor-pointer group"
+                onclick="window.openLightboxEncoded('${encoded}', 0)">
+                <img id="${cardUid}" src="${images[0]}" alt="Product Image" loading="lazy"
+                    onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+        `;
+    }
+
+    if (images.length === 2) {
+        return `
+            <div class="relative overflow-hidden border-b border-brand-border bg-brand-alabaster cursor-pointer" dir="ltr">
+                <div class="grid grid-cols-2 gap-0.5 aspect-portrait">
+                    <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 0)">
+                        <img src="${images[0]}" alt="Photo 1" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 1)">
+                        <img src="${images[1]}" alt="Photo 2" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+                <div onclick="window.openLightboxEncoded('${encoded}', 0)" class="absolute top-2.5 left-2.5 z-10 bg-black/75 backdrop-blur-xs text-white text-[10px] px-2.5 py-1 rounded-full shadow-md flex items-center gap-1.5 font-semibold">
+                    <i class="fas fa-images text-[10px] text-brand-champagne"></i>
+                    <span>2 صور</span>
+                </div>
+            </div>
+        `;
+    }
+
+    if (images.length === 3) {
+        return `
+            <div class="relative overflow-hidden border-b border-brand-border bg-brand-alabaster cursor-pointer" dir="ltr">
+                <div class="flex flex-col aspect-portrait gap-0.5">
+                    <div class="h-2/3 relative overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 0)">
+                        <img id="${cardUid}" src="${images[0]}" alt="Photo 1" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="h-1/3 grid grid-cols-2 gap-0.5">
+                        <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 1)">
+                            <img src="${images[1]}" alt="Photo 2" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 2)">
+                            <img src="${images[2]}" alt="Photo 3" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="window.openLightboxEncoded('${encoded}', 0)" class="absolute top-2.5 left-2.5 z-10 bg-black/75 backdrop-blur-xs text-white text-[10px] px-2.5 py-1 rounded-full shadow-md flex items-center gap-1.5 font-semibold">
+                    <i class="fas fa-images text-[10px] text-brand-champagne"></i>
+                    <span>3 صور</span>
+                </div>
+            </div>
+        `;
+    }
+
+    // 4 or more images (Facebook style: main photo + 2 sub-photos + 1 photo with +N overlay)
+    const extraCount = images.length - 3;
+    return `
+        <div class="relative overflow-hidden border-b border-brand-border bg-brand-alabaster cursor-pointer" dir="ltr">
+            <div class="flex flex-col aspect-portrait gap-0.5">
+                <div class="h-3/5 relative overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 0)">
+                    <img id="${cardUid}" src="${images[0]}" alt="Photo 1" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="h-2/5 grid grid-cols-3 gap-0.5">
+                    <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 1)">
+                        <img src="${images[1]}" alt="Photo 2" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 2)">
+                        <img src="${images[2]}" alt="Photo 3" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="relative h-full overflow-hidden group" onclick="window.openLightboxEncoded('${encoded}', 3)">
+                        <img src="${images[3]}" alt="Photo 4" loading="lazy" onerror="this.onerror=null;this.src='${fallbackSrc}';"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/65 backdrop-blur-[1px] flex flex-col items-center justify-center text-white transition-colors group-hover:bg-black/75">
+                            <span class="font-bold text-lg font-mono tracking-tighter">+${extraCount}</span>
+                            <span class="text-[9px] font-sans opacity-90">المزيد</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="window.openLightboxEncoded('${encoded}', 0)" class="absolute top-2.5 left-2.5 z-10 bg-black/75 backdrop-blur-xs text-white text-[10px] px-2.5 py-1 rounded-full shadow-md flex items-center gap-1.5 font-semibold">
+                <i class="fas fa-images text-[10px] text-brand-champagne"></i>
+                <span>${images.length} صور</span>
+            </div>
+        </div>
+    `;
+}
+
 function renderProductCard(item) {
     const encoded = encodeProduct(item);
     const hasPrice = Number(item.price) > 0;
@@ -251,6 +458,13 @@ function renderProductCard(item) {
     const productId = `${item.name}-${item.price}-${item.image}`;
     const desc = item.description || "";
     const isLongDesc = desc.length > 35;
+
+    // Get images array or fallback to single image
+    const images = Array.isArray(item.images) && item.images.length > 0
+        ? item.images
+        : [item.image || "https://i.ibb.co/1YyrVXF9/product-serum.jpg"];
+
+    const cardUid = 'card-' + Math.random().toString(36).substring(2, 9);
 
     const descHtml = isLongDesc ? `
         <p class="text-brand-muted text-xs mb-1 desc-clamp-1 font-light leading-relaxed transition-all duration-300">${desc}</p>
@@ -262,6 +476,8 @@ function renderProductCard(item) {
         <p class="text-brand-muted text-xs mb-3 font-light leading-relaxed min-h-[36px]">${desc}</p>
     `;
 
+    const facebookGridHtml = renderFacebookImageGrid(images, cardUid);
+
     return `
         <div class="product-card relative bg-white border border-brand-border rounded-sm overflow-hidden transition-all duration-300 text-right flex flex-col justify-between" dir="rtl">
             <div>
@@ -271,12 +487,10 @@ function renderProductCard(item) {
                         بالسلة
                     </div>
                 ` : `
-                    <div class="absolute top-3 right-3 bg-brand-champagne/90 text-brand-darkSlate text-[10px] font-bold px-3 py-1 rounded-sm shadow-xs">طبيعي 100%</div>
+                    <div class="absolute top-3 right-3 z-10 bg-brand-champagne/90 text-brand-darkSlate text-[10px] font-bold px-3 py-1 rounded-sm shadow-xs">طبيعي 100%</div>
                 `}
-                
-                <div class="aspect-portrait overflow-hidden border-b border-brand-border bg-brand-alabaster">
-                    <img src="${item.image}" alt="${escapeHtml(item.name)}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                </div>
+
+                ${facebookGridHtml}
 
                 <div class="p-4 sm:p-5">
                     <h3 class="font-medium text-sm sm:text-base mb-1.5 text-brand-plum leading-snug">${item.name}</h3>
@@ -475,7 +689,7 @@ window.quickBuy = function (encoded) {
     const activePrice = Number(product.price);
     const productId = `${product.name}-${activePrice}-${product.image}`;
     const existing = cart.find(item => item.id === productId);
-    
+
     if (!existing) {
         cart.push({
             ...product,
@@ -752,7 +966,7 @@ window.requestPhoneBeforeOrder = function () {
         errEl.textContent = "أضف منتج واحد على الأقل للسلة.";
         return;
     }
-    
+
     const notes = document.getElementById("customerNotesDelivery")?.value.trim();
     if (!notes) {
         errEl.textContent = "يرجى كتابة العنوان بالتفصيل.";
@@ -833,7 +1047,7 @@ window.confirmPhoneAndSend = function () {
     phoneError.classList.add("hidden");
     const notes = pendingOrderData ? pendingOrderData.notes : "";
     const fullAddress = notes;
-    
+
     // Prepare message
     const message = buildWhatsAppMessage(notes, rawPhone, customerName);
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -856,38 +1070,38 @@ window.confirmPhoneAndSend = function () {
         body: formData,
         headers: { "Accept": "application/json" }
     })
-    .then(res => {
-        if (res.ok) {
+        .then(res => {
+            if (res.ok) {
+                window.closePhoneModal(false);
+                window.closeCart();
+                cart = [];
+                saveCart();
+
+                // Redirect to WhatsApp directly
+                const newWindow = window.open(url, "_blank");
+                if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
+                    window.location.href = url;
+                }
+            } else {
+                alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.");
+            }
+        })
+        .catch(() => {
             window.closePhoneModal(false);
             window.closeCart();
             cart = [];
             saveCart();
-            
+
             // Redirect to WhatsApp directly
             const newWindow = window.open(url, "_blank");
             if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
                 window.location.href = url;
             }
-        } else {
-            alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.");
-        }
-    })
-    .catch(() => {
-        window.closePhoneModal(false);
-        window.closeCart();
-        cart = [];
-        saveCart();
-        
-        // Redirect to WhatsApp directly
-        const newWindow = window.open(url, "_blank");
-        if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
-            window.location.href = url;
-        }
-    })
-    .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = origText;
-    });
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = origText;
+        });
 };
 
 // ------------------- Search Feature -------------------

@@ -22,6 +22,11 @@
           "name": "مجموعة لميس لعلاج الشعر",
           "price": 1200,
           "image": "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
+          "images": [
+            "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
+            "https://i.ibb.co/wN2t6NnL/mahitap-hair-serum.jpg",
+            "https://i.ibb.co/DHbRcZrr/mahitap-wooden-comb.jpg"
+          ],
           "description": "عبارة عن: شامبو - بلسم - حمام كريم - سيرم ✨"
         },
         {
@@ -57,7 +62,13 @@
         {
           "name": "باكج حمام مغربي كامل",
           "price": 950,
-          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+          "image": "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
+          "images": [
+            "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
+            "https://i.ibb.co/RG2Lmtwz/moroccan-khouloud-loofah.jpg",
+            "https://i.ibb.co/DfXMrQvj/bikini-package.jpg",
+            "https://i.ibb.co/84QM3Tts/taous-bikini-wash.jpg"
+          ],
           "description": "منتجات أصلية 100% ✨"
         },
         {
@@ -103,11 +114,59 @@
           "description": "كل لون بيحكي حكاية بنت فينا 👑 غير قابل للتذوق ❌ بس ريحته حلوة 😂 وأعلى بيجمنت هتقابلوه ✨"
         },
         {
-          "name": "سيرم للبشرة بخلاصة الهيالورونيك اسيد & الساليسيلك",
-          "price": 195,
-          "oldPrice": 250,
-          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
-          "description": "للنضارة والترطيب وعلاج المسام والشوائب ✨"
+          "name": "سيروم مذهلة للبشرة✨",
+          "price": 250,
+          "image": "https://i.ibb.co/N20yJw8Q/serum-mozhila.jpg",
+          "description": "مكون من ڤيتامين E، هيالورونيك اسيد، وخلاصة عرقسوس. سيروم بيقلل ندبات البشرة وبيساعد علي توحيد اللون والنضارة والترطيب ✨"
+        },
+        {
+          "name": "ليب بالم (تو اوبشن)",
+          "price": 55,
+          "image": "https://i.ibb.co/Q53pYFW/lip-balm-1.jpg",
+          "images": [
+            "https://i.ibb.co/Q53pYFW/lip-balm-1.jpg",
+            "https://i.ibb.co/KzjqLkh0/lip-balm-2.jpg"
+          ],
+          "description": "بيعالج اسمرار الشفايف وجفافها - ترطيبه عمييييييق ..✨"
+        },
+        {
+          "name": "سيروم النياسيناميد للبشرة",
+          "price": 190,
+          "oldPrice": 220,
+          "image": "https://i.ibb.co/8gX7XPDx/serum-niacinamide.jpg",
+          "description": "لجميع أنواع البشرة والبشرة المعرضة للحبوب لأنه بيعالج حبوب الجلد المزمنة وآثارها ✨ وبيساعد علي النضارة وتقليل ظهور المسام الواسعة.."
+        },
+        {
+          "name": "تنت خدود كريمي",
+          "price": 60,
+          "image": "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
+          "images": [
+            "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
+            "https://i.ibb.co/m5mSChwv/creamy-tint-2.jpg"
+          ],
+          "description": "أسهل بيجمينت✨♥️ يحتوي علي مكونات طبيعية مثل: ڤيتامين E✨ وجوز هند🥥"
+        },
+        {
+          "name": "زيت مساج للاسترخاء والتدليك",
+          "price": 180,
+          "image": "https://i.ibb.co/nWYcgBJ/massage-oil-1.jpg",
+          "images": [
+            "https://i.ibb.co/nWYcgBJ/massage-oil-1.jpg",
+            "https://i.ibb.co/1GBBq0pH/massage-oil-2.png",
+            "https://i.ibb.co/G3dgcP8G/massage-oil-3.jpg"
+          ],
+          "description": "زيت مساج للاسترخاء والتدليك🌸🤍 نوع آخر من الحب للمتزوجين (غير قابل للتذوق❌) ✨"
+        },
+        {
+          "name": "هاند كريم للترطيب وعلاج الجلد الميت",
+          "price": 95,
+          "image": "https://i.ibb.co/j9vrchFs/hand-cream-1.png",
+          "images": [
+            "https://i.ibb.co/j9vrchFs/hand-cream-1.png",
+            "https://i.ibb.co/Xr8hJdg4/hand-cream-2.jpg",
+            "https://i.ibb.co/gbPrvRJL/hand-cream-3.png"
+          ],
+          "description": "عطر اتيشز كيك 🍰 & فراولة🍓 مكون من: يوريا ✨ زبدة شيا ✨ خلاصة عرقسوس✨ كولاجين ✨ ڤيتامين هـ✨"
         }
       ]
     },
@@ -430,55 +489,90 @@
     },
     "saudi_musk": {
       "title": "مسك سعودي رش & توله",
-      "image": "images/musk_spray_set.png",
+      "image": "https://i.ibb.co/SXZXtbR2/musk-spray-set.png",
       "items": [
         {
           "name": "مسك الرمان سعودي (رش)",
           "price": 220,
-          "image": "images/musk_rouman_spray.png",
+          "image": "https://i.ibb.co/L41zN3g/musk-rouman-spray.png",
           "description": "مسك الرمان خالي من الكحول 100ml برائحة مميزة وثبات يدوم طويلاً ✨"
         },
         {
           "name": "مسك فانيليا سعودي (رش)",
           "price": 220,
-          "image": "images/musk_vanelia_spray.png",
+          "image": "https://i.ibb.co/Q7MTQfmh/musk-vanelia-spray.png",
           "description": "مسك فانيليا خالي من الكحول 100ml برائحة ناعمة وجذابة ✨"
         },
         {
           "name": "مسك بودر سعودي (رش)",
           "price": 220,
-          "image": "images/musk_powder_spray.png",
+          "image": "https://i.ibb.co/v4BMgs7F/musk-powder-spray.png",
           "description": "مسك بودر خالي من الكحول 100ml برائحة النظافة والانتعاش ✨"
         },
         {
           "name": "مسك التوت سعودي (رش)",
           "price": 220,
-          "image": "images/musk_tout_spray.png",
+          "image": "https://i.ibb.co/v67VfmWQ/musk-tout-spray.png",
           "description": "مسك التوت خالي من الكحول 100ml برائحة فاكهية مميزة ورائعة ✨"
         },
         {
           "name": "تشكيلة المسك السعودي (رش - أنواعه المختلفة)",
           "price": 220,
-          "image": "images/musk_spray_set.png",
+          "image": "https://i.ibb.co/SXZXtbR2/musk-spray-set.png",
           "description": "تشكيلة مميزة من المسك السعودي الرش (الرمان، فانيليا، بودر، الطهارة) 100ml ✨"
         },
         {
           "name": "توله مسك سعودي أصلي (تشكيلة ألوان)",
           "price": 150,
-          "image": "images/musk_tola_set.jpg",
+          "image": "https://i.ibb.co/rRn2QYj8/musk-tola-set.jpg",
           "description": "توله مسك سعودي أصلي لتعطير أماكن النبض والجسم ✨"
         },
         {
           "name": "توله مسك عود سعودي",
           "price": 150,
-          "image": "images/musk_tola_1.png",
+          "image": "https://i.ibb.co/NdshTnk1/musk-tola-1.png",
           "description": "توله مسك عود سعودي أصلي برائحة فاخرة ✨"
         },
         {
           "name": "توله مسك سعودي فاخر",
           "price": 150,
-          "image": "images/musk_tola_2.png",
+          "image": "https://i.ibb.co/SCHzKV6/musk-tola-2.png",
           "description": "توله مسك سعودي فاخر لتعطير اليدين والجسم ✨"
+        }
+      ]
+    },
+    "foot_care": {
+      "title": "منتجات القدم",
+      "image": "https://i.ibb.co/zT78QJ5v/dry-brush-1.png",
+      "items": [
+        {
+          "name": "دراي براش للجسم والقدم",
+          "price": 220,
+          "image": "https://i.ibb.co/zT78QJ5v/dry-brush-1.png",
+          "images": [
+            "https://i.ibb.co/zT78QJ5v/dry-brush-1.png",
+            "https://i.ibb.co/bRR9d61L/dry-brush-2.png",
+            "https://i.ibb.co/bgvjFvW6/dry-brush-3.png"
+          ],
+          "description": "من الخلف لعلامات التمدد والسلوليت✅"
+        },
+        {
+          "name": "باكدچ قدم كامل",
+          "price": 490,
+          "image": "https://i.ibb.co/jPw66d2Z/foot-package.jpg",
+          "description": "عبارة عن: فوت بالم (معالج) + فوت تينت (مورد) + مبرد قدم (منظف للجلد الميت) + أملاح قدم (علاج لتشققات القدم والاسترخاء) + شراب سيلكون أصلي (لترطيب القدم وإزالة الجلد الميت) ✨"
+        },
+        {
+          "name": "شراب سيلكون اصلي💯",
+          "price": 120,
+          "image": "https://i.ibb.co/RTX6tPzR/silicone-socks-1.png",
+          "images": [
+            "https://i.ibb.co/RTX6tPzR/silicone-socks-1.png",
+            "https://i.ibb.co/QFY17PKw/silicone-socks-2.png",
+            "https://i.ibb.co/ccSfyL5X/silicone-socks-3.png",
+            "https://i.ibb.co/mVGLCdWk/silicone-socks-4.png"
+          ],
+          "description": "لعلاج تشققات القدم.. بيساعد علي ترطيب القدم وعلاجه من الجفاف نهائياً 💚✅"
         }
       ]
     },
