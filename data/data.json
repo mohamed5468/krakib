@@ -428,6 +428,60 @@
         }
       ]
     },
+    "saudi_musk": {
+      "title": "مسك سعودي رش & توله",
+      "image": "images/musk_spray_set.png",
+      "items": [
+        {
+          "name": "مسك الرمان سعودي (رش)",
+          "price": 220,
+          "image": "images/musk_rouman_spray.png",
+          "description": "مسك الرمان خالي من الكحول 100ml برائحة مميزة وثبات يدوم طويلاً ✨"
+        },
+        {
+          "name": "مسك فانيليا سعودي (رش)",
+          "price": 220,
+          "image": "images/musk_vanelia_spray.png",
+          "description": "مسك فانيليا خالي من الكحول 100ml برائحة ناعمة وجذابة ✨"
+        },
+        {
+          "name": "مسك بودر سعودي (رش)",
+          "price": 220,
+          "image": "images/musk_powder_spray.png",
+          "description": "مسك بودر خالي من الكحول 100ml برائحة النظافة والانتعاش ✨"
+        },
+        {
+          "name": "مسك التوت سعودي (رش)",
+          "price": 220,
+          "image": "images/musk_tout_spray.png",
+          "description": "مسك التوت خالي من الكحول 100ml برائحة فاكهية مميزة ورائعة ✨"
+        },
+        {
+          "name": "تشكيلة المسك السعودي (رش - أنواعه المختلفة)",
+          "price": 220,
+          "image": "images/musk_spray_set.png",
+          "description": "تشكيلة مميزة من المسك السعودي الرش (الرمان، فانيليا، بودر، الطهارة) 100ml ✨"
+        },
+        {
+          "name": "توله مسك سعودي أصلي (تشكيلة ألوان)",
+          "price": 150,
+          "image": "images/musk_tola_set.jpg",
+          "description": "توله مسك سعودي أصلي لتعطير أماكن النبض والجسم ✨"
+        },
+        {
+          "name": "توله مسك عود سعودي",
+          "price": 150,
+          "image": "images/musk_tola_1.png",
+          "description": "توله مسك عود سعودي أصلي برائحة فاخرة ✨"
+        },
+        {
+          "name": "توله مسك سعودي فاخر",
+          "price": 150,
+          "image": "images/musk_tola_2.png",
+          "description": "توله مسك سعودي فاخر لتعطير اليدين والجسم ✨"
+        }
+      ]
+    },
     "makeup": {
       "title": "الميك اب",
       "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
