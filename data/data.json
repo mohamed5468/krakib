@@ -15,7 +15,7 @@
         {
           "name": "رول عطري ببتلات الورد",
           "price": 115,
-          "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
+          "image": "https://i.ibb.co/HL18ByhM/rose-roll-on.jpg",
           "description": "(تعطير أي أريا برايفيت) و(أماكن النبض) ✨"
         },
         {
@@ -167,6 +167,26 @@
             "https://i.ibb.co/gbPrvRJL/hand-cream-3.png"
           ],
           "description": "عطر اتيشز كيك 🍰 & فراولة🍓 مكون من: يوريا ✨ زبدة شيا ✨ خلاصة عرقسوس✨ كولاجين ✨ ڤيتامين هـ✨"
+        },
+        {
+          "name": "غسول الهيالورونيك اسيد (لنضارة البشرة)",
+          "price": 220,
+          "image": "https://i.ibb.co/zVPZ0bK9/facewash-hyaluronic.jpg",
+          "images": [
+            "https://i.ibb.co/zVPZ0bK9/facewash-hyaluronic.jpg",
+            "https://i.ibb.co/ycKJFXfq/facewash-both.jpg"
+          ],
+          "description": "يحتوي علي حمض الهيالورونيك وڤيتامين E5 (لوريا سلفواسيتات) ومواد ترطيب مثل الجلسرين والبانثينول لنضارة البشرة 🌸🤍"
+        },
+        {
+          "name": "غسول الساليسيليك اسيد (لتقشير الحبوب وآثارها)",
+          "price": 220,
+          "image": "https://i.ibb.co/TBtM2czN/facewash-salicylic.jpg",
+          "images": [
+            "https://i.ibb.co/TBtM2czN/facewash-salicylic.jpg",
+            "https://i.ibb.co/ycKJFXfq/facewash-both.jpg"
+          ],
+          "description": "يحتوي علي حمض الساليسيليك وحمض اللوريك ومستخلصات طبيعية مثل الألوفيرا وماء الجليسرين والشاي الأخضر لتقشير الحبوب وآثارها ✨"
         }
       ]
     },
