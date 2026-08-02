@@ -59,18 +59,7 @@
           "image": "https://i.ibb.co/1YyrVXF9/product-serum.jpg",
           "description": "بتعالج جفاف الجلد والحبوب وآثارها. مكوناتها كلها طبيعية مثل: زبدة الشيا وجوز الهند والعرقسوس واليوريا ✨"
         },
-        {
-          "name": "باكج حمام مغربي كامل",
-          "price": 950,
-          "image": "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
-          "images": [
-            "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
-            "https://i.ibb.co/RG2Lmtwz/moroccan-khouloud-loofah.jpg",
-            "https://i.ibb.co/DfXMrQvj/bikini-package.jpg",
-            "https://i.ibb.co/84QM3Tts/taous-bikini-wash.jpg"
-          ],
-          "description": "منتجات أصلية 100% ✨"
-        },
+        
         {
           "name": "اسكراب الكولاجين",
           "price": 250,
