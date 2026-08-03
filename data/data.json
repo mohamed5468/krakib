@@ -589,10 +589,88 @@
         }
       ]
     },
-    "makeup": {
+   "makeup": {
       "title": "الميك اب",
       "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
-      "items": []
+      "items": [
+        {
+          "name": "بلاشر چيلاتين كوري للشفاه والخدود",
+          "price": 120,
+          "image": "https://i.ibb.co/ksc6rYrY/blusher-monaya.png",
+          "description": "بلاشر چيلاتين كوري متعدد الاستخدام للشفاه والخدود ✨"
+        },
+        {
+          "name": "بلاشر مُنايا",
+          "price": 70,
+          "image": "https://i.ibb.co/ksc6rYrY/blusher-monaya.png",
+          "description": "بلاشر مونايا بورجوفا مالتي ستيك 💗"
+        },
+        {
+          "name": "بلاشر سِندرا",
+          "price": 75,
+          "image": "https://i.ibb.co/gb2zhPWz/blusher-sandra.png",
+          "description": "بلاشر ساندرا كوزماتيكس - تطبيق سلس وألوان مُشبّعة وطويلة الأمد ✅"
+        },
+        {
+          "name": "ايلاينر لوتشر سواد فحمي وتر بروف 🖤",
+          "price": 150,
+          "image": "https://i.ibb.co/YBFYgnvL/eyeliner-lchear-waterproof.png",
+          "description": "ايلاينر لوتشر سائل سواد فحمي مقاوم للماء - سريع الجفاف، دقيق وثابت طول اليوم 🖤"
+        },
+        {
+          "name": "بلاشر ساندرا ليكويد بينكي 🩷",
+          "price": 110,
+          "image": "https://i.ibb.co/PGdW610p/blusher-sandra-liquid-pinky.png",
+          "description": "بلاشر ساندرا ليكويد بينكي سائل بلون وردي جذاب 🩷"
+        },
+        {
+          "name": "ايلاينر ريشه منايا سواد فحمي وتر بروف 🖤",
+          "price": 75,
+          "image": "https://i.ibb.co/jZkWtkB8/eyeliner-monaya-feather.jpg",
+          "description": "ايلاينر ريشه من منايا - سواد فحمي مقاوم للماء، دقيق وثابت 🖤"
+        },
+        {
+          "name": "برايمر فونديشين للاستخدام اليومي 🩶",
+          "price": 120,
+          "oldPrice": 150,
+          "image": "https://i.ibb.co/ZRcY55Vn/primer-foundation-monaya.png",
+          "description": "برايمر فونديشين منايا للاستخدام اليومي - مات وغير محسوس على البشرة 🩶"
+        },
+        {
+          "name": "كونسيلر بيرتي ومان للاستخدام اليومي ❣️",
+          "price": 85,
+          "image": "https://i.ibb.co/fJNXWHf/concealer-pretty-woman.jpg",
+          "description": "كونسيلر بيرتي ومان BB للاستخدام اليومي - يُخفي العيوب ويُوحّد لون البشرة ❣️"
+        },
+        {
+          "name": "فونديشين لوتشر الأوريچينال فُل كاڤير لاستخدام المناسبات💛",
+          "price": 245,
+          "oldPrice": 270,
+          "image": "images/foundation-lchear-bb-fitme.jpeg",
+          "description": "فونديشين لوتشر BB Cream Fit Me - تغطية كاملة، مقاوم للماء، مناسب للمناسبات 💛"
+        },
+        {
+          "name": "فونديشين روز جولد فُل كاڤير للاستخدام اليومي والمناسبات 💜",
+          "price": 210,
+          "oldPrice": 245,
+          "image": "images/foundation-rose-gold-superstay.jpeg",
+          "description": "فونديشين روز جولد سوبر ستاي لومي-مات - ثبات حتى 30 ساعة، تغطية متوسطة إلى كاملة SPF16 💜"
+        },
+        {
+          "name": "فونديشين ساندرا يصلح لكل أنواع البشرة 💜",
+          "price": 199,
+          "oldPrice": 225,
+          "image": "images/foundation-sandra-niacinamide.jpeg",
+          "description": "فونديشين ساندرا مرطب بالنياسيناميد - يناسب كل أنواع البشرة، تغطية هايلة ويوحد لون البشرة 💜"
+        },
+        {
+          "name": "فونديشين مايت سينما فُل كاڤير للمناسبات والسواريه 🖤",
+          "price": 235,
+          "oldPrice": 265,
+          "image": "images/foundation-might-cinema-bb.jpeg",
+          "description": "فونديشين مايت سينما BB - مرطب طويل الأمد، مظهر مات، تغطية كاملة للسواريهات 🖤"
+        }
+      ]
     }
   }
 }
