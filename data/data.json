@@ -684,32 +684,56 @@
 
     "tools": {
       "title": "ادوات الميك اب",
-      "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
+      "image": "https://i.ibb.co/gZfxFYpG/Whats-App-Image-2026-08-04-at-5-58-06-AM.jpg",
       "items": [
         {
-          "name": "ليب لاينر فلومار برايه جميع درجاته✨♥️ ",
-          "price": 30,
-          "image": "https://i.ibb.co/sJMV8Fj5/Whats-App-Image-2026-08-04-at-5-41-05-AM-3.jpg",
-          "description": " ✨"
-        },
-        {
-          "name": "قلم كحل اسود سواد فحمي من فلومار ",
-          "price": 35,
-          "image": "https://i.ibb.co/nMpCvMQ4/Whats-App-Image-2026-08-04-at-5-41-05-AM-2.jpg",
-          "description": " 💗"
-        },
-        {
-          "name": "قلم كحل الوان من فلومار",
-          "price": 35,
-          "image": "https://i.ibb.co/Cp0sT5PK/Whats-App-Image-2026-08-04-at-5-41-05-AM-1.jpg",
-          "description": " ✅"
-        },
-        {
-          "name": "كحل الوان من روز بيري جميع الدرجات ",
-          "price": 80,
-          "image": "https://i.ibb.co/Pvs8hPnj/Whats-App-Image-2026-08-04-at-5-41-05-AM.jpg",
-          "description": " 🖤"
-       }
+    "name": "بيوتي بلندر للبشرة فردية ✨💜",
+    "price": 25,
+    "image": "https://i.ibb.co/bjkH6YyC/Whats-App-Image-2026-08-04-at-5-58-07-AM-4.jpg",
+    "description": "بيوتي بلندر فردية تساعد على توزيع ودمج المكياج بشكل متساوٍ للحصول على نتيجة ناعمة وطبيعية. ✨"
+  },
+  {
+    "name": "بولة بيوتي بلندر للبشرة ✨💜",
+    "price": 70,
+    "image": "https://i.ibb.co/G4b5spg7/Whats-App-Image-2026-08-04-at-5-58-07-AM-3.jpg",
+    "description": "بولة بيوتي بلندر تساعد على تحسين بيجمنت المكياج وتمنحك تطبيقًا احترافيًا وسهل الاستخدام. ✨"
+  },
+  {
+    "name": "بيوتي بلندر رباعية بشكل جديد ✨💜",
+    "price": 70,
+    "image": "https://i.ibb.co/4nNzPQRF/Whats-App-Image-2026-08-04-at-5-58-07-AM-2.jpg",
+    "description": "مجموعة بيوتي بلندر مكونة من 4 قطع بتصميم جديد ومختلف تساعد على إبراز بيجمنت المكياج وتوزيعه باحترافية. ✨"
+  },
+  {
+    "name": "باف كومباكت بودر ولوس بودر 🌸💜",
+    "price": 25,
+    "image": "https://i.ibb.co/mCyHDchZ/Whats-App-Image-2026-08-04-at-5-58-07-AM-1.jpg",
+    "description": "باف ناعم مناسب لتطبيق الكومباكت بودر واللوس بودر بسهولة للحصول على لمسة نهائية مثالية. ✨"
+  },
+  {
+    "name": "شنطة تنظيم الكوزمتكس ✨💜",
+    "price": 99,
+    "image": "https://i.ibb.co/DHRc7rKb/Whats-App-Image-2026-08-04-at-5-58-07-AM.jpg",
+    "description": "شنطة عملية تساعدك على تقسيم وترتيب مستحضرات التجميل بشكل أسهل وأسرع. السعر 99ج بدل 125ج. ✨"
+  },
+  {
+    "name": "مجموعة فرش شي إن 🌸🤭",
+    "price": 110,
+    "image": "https://i.ibb.co/cXgq25Mx/Whats-App-Image-2026-08-04-at-5-58-06-AM-2.jpg",
+    "description": "مجموعة فرش بشعر ناعم طبيعي، سهلة الاستخدام والتنظيف بعد الاستعمال. السعر 110ج بدل 135ج. ✨"
+  },
+  {
+    "name": "فرشاة تسريح الحواجب والبيبي هير 🌸💗",
+    "price": 10,
+    "image": "https://i.ibb.co/rG30BCYp/Whats-App-Image-2026-08-04-at-5-58-06-AM-1.jpg",
+    "description": "فرشاة عملية لتصفيف الحواجب والبيبي هير بدقة وسهولة. ✨"
+  },
+  {
+    "name": "باف البودر واللوس بودر (4 قطع) 🌸💜",
+    "price": 60,
+    "image": "https://i.ibb.co/gZfxFYpG/Whats-App-Image-2026-08-04-at-5-58-06-AM.jpg",
+    "description": "باكيت مكون من 4 قطع من باف البودر واللوس بودر لتطبيق مثالي وتوزيع متساوٍ للمكياج. ✨"
+  }
       ]
     },
     
@@ -787,6 +811,48 @@
           "image": "images/foundation-sandra-niacinamide.jpeg",
           "description": "فونديشين ساندرا مرطب بالنياسيناميد - يناسب كل أنواع البشرة، تغطية هايلة ويوحد لون البشرة 💜"
         },
+        {
+          "name": "ليب لاينر فلومار برايه جميع درجاته✨♥️ ",
+          "price": 30,
+          "image": "https://i.ibb.co/sJMV8Fj5/Whats-App-Image-2026-08-04-at-5-41-05-AM-3.jpg",
+          "description": " ✨"
+        },
+        {
+          "name": "قلم كحل اسود سواد فحمي من فلومار ",
+          "price": 35,
+          "image": "https://i.ibb.co/nMpCvMQ4/Whats-App-Image-2026-08-04-at-5-41-05-AM-2.jpg",
+          "description": " 💗"
+        },
+        {
+          "name": "قلم كحل الوان من فلومار",
+          "price": 35,
+          "image": "https://i.ibb.co/Cp0sT5PK/Whats-App-Image-2026-08-04-at-5-41-05-AM-1.jpg",
+          "description": " ✅"
+        },
+        {
+          "name": "كحل الوان من روز بيري جميع الدرجات ",
+          "price": 80,
+          "image": "https://i.ibb.co/Pvs8hPnj/Whats-App-Image-2026-08-04-at-5-41-05-AM.jpg",
+          "description": " 🖤"
+       },
+        {
+          "name": "بلاشر استيك من بينكي جولدن روز بيجمينت سهل وسريع ثبات ممتاز 🌸  ",
+          "price": 95,
+          "image": "https://i.ibb.co/bj0mTzv9/Whats-App-Image-2026-08-04-at-5-44-25-AM.jpg",
+          "description": " 💗"
+        },
+        {
+          "name": "تينت مائي من شيجلام بيجمينت سهل وسريع ✨",
+          "price": 120,
+          "image": "https://i.ibb.co/9DZQrws/Whats-App-Image-2026-08-04-at-5-44-26-AM.jpg",
+          "description": " ✅"
+        },
+        {
+          "name": "تينت چيلاتين كوري للشفاه والخدود🍓❤️  ",
+          "price": 120,
+          "image": "https://i.ibb.co/Pvs8hPnj/Whats-App-Image-2026-08-04-at-5-41-05-AM.jpg",
+          "description": " 🖤"
+       },
         {
           "name": "فونديشين مايت سينما فُل كاڤير للمناسبات والسواريه 🖤",
           "price": 235,
