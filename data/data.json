@@ -58,6 +58,7 @@
           "image": "https://i.ibb.co/Rp2jJbDW/Whats-App-Image-2026-08-03-at-2-37-04-AM.jpg",
           "description": "لشد البشرة والنضارة ✨"
         },
+        
         {
           "name": "هير ستيك طبيعي مع فرشاة للبيبي",
           "price": 250,
@@ -140,16 +141,14 @@
           "image": "https://i.ibb.co/8gX7XPDx/serum-niacinamide.jpg",
           "description": "لجميع أنواع البشرة والبشرة المعرضة للحبوب لأنه بيعالج حبوب الجلد المزمنة وآثارها ✨ وبيساعد علي النضارة وتقليل ظهور المسام الواسعة.."
         },
-        {
-          "name": "تنت خدود كريمي",
-          "price": 60,
-          "image": "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
-          "images": [
-            "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
-            "https://i.ibb.co/m5mSChwv/creamy-tint-2.jpg"
-          ],
-          "description": "أسهل بيجمينت✨♥️ يحتوي علي مكونات طبيعية مثل: ڤيتامين E✨ وجوز هند🥥"
+{
+          "name": "سيرم للبشره بخلاصه الهيلرونيك اسيد & السالسيلك",
+          "price": 195,
+          "image": "https://i.ibb.co/V0mC5f2g/5f2f090a-52e2-4017-aff8-b45aac86e4d5.jpg",
+          "description": "للنضاره والترطيب وعلاج المسام والشوائب ✨✨"
         },
+        
+        
         {
           "name": "زيت مساج للاسترخاء والتدليك",
           "price": 180,
@@ -182,6 +181,17 @@
           ],
           "description": "يحتوي علي حمض الهيالورونيك وڤيتامين E5 (لوريا سلفواسيتات) ومواد ترطيب مثل الجلسرين والبانثينول لنضارة البشرة 🌸🤍"
         },
+{
+          "name": "تنت خدود كريمي",
+          "price": 60,
+          "image": "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
+          "images": [
+            "https://i.ibb.co/qFrb5Wyy/creamy-tint-1.jpg",
+            "https://i.ibb.co/m5mSChwv/creamy-tint-2.jpg"
+          ],
+          "description": "أسهل بيجمينت✨♥️ يحتوي علي مكونات طبيعية مثل: ڤيتامين E✨ وجوز هند🥥"
+        },
+        
         {
           "name": "غسول الساليسيليك اسيد (لتقشير الحبوب وآثارها)",
           "price": 220,
