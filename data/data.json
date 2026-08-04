@@ -29,6 +29,17 @@
           ],
           "description": "عبارة عن: شامبو - بلسم - حمام كريم - سيرم ✨"
         },
+
+        {
+          "name": "شاور چل بعطور فرنسيه ميكس فواكهه✨ ",
+          "price": 220,
+          "image": "https://i.ibb.co/kgbfx4KQ/e87a7acd-17a5-42a5-81e9-8d5937c497f9.jpg",
+          "images": [
+            "https://i.ibb.co/xSvSNCkL/da090105-9c73-477e-913f-bb40d4eb9197.jpg"
+            
+          ],
+          "description": "للأستحمام & يساعد علي تنضيف الجسم بعمق وعطر رائع ثابت لمده 6 ساعات ✅"
+        },
         {
           "name": "هير سيرم (معالج للتقصف والهيشان)",
           "price": 330,
@@ -603,6 +614,47 @@
         }
       ]
     },
+
+"privet_ba": {
+      "title": "تعطير خاص بالعرايس",
+      "image": "https://i.ibb.co/zT78QJ5v/dry-brush-1.png",
+      "items": [
+        {
+          "name": "بودر جسم للتعطير والترطيب بعطور مختلفه🫧🩵 ",
+          "price": 350,
+          "image": "https://i.ibb.co/4wp3Qbcg/4bc91915-99c6-46c3-ae5b-de72fa36abc8.jpg",
+          "images": [
+            "https://i.ibb.co/DcKGLF4/1b9f2034-e279-4adb-b9b3-1643c4e8767f.jpg",
+            "https://i.ibb.co/qYcN3RBK/89a9ca92-b71d-45fd-b9a8-032e05ef81e0.jpg",
+            "https://i.ibb.co/zTQVvCfs/bb85b2a8-04eb-4ac1-9d0c-725181ee79df.jpg",
+            "https://i.ibb.co/qM9r7hzS/8c76a951-5b34-48c1-9590-8dca169e0a6e.jpg",
+            "https://i.ibb.co/Z6Np7bH9/6d73c949-e776-4f8e-a6e3-91b9dca0e0e9.jpg"
+          ],
+          "description": "بودر جسم للتعطير والترطيب بعطور مختلفه"
+        },
+       {
+          "name": "برفيوم  رول دون   (تعطير للجسم واماكن النبض)",
+          "price": 180,
+          "image": "https://i.ibb.co/mVFs21G4/2431a482-f072-4f82-aec0-75cba3ed81c4.jpg",
+          "images": [
+            "https://i.ibb.co/XfRXZzXP/2af996d2-3620-4b08-a7e0-82edcb77579f.jpg",
+            "https://i.ibb.co/BVvWTjf0/b590ca1f-4402-4bc2-a178-6a99fc83aeaa.jpg"
+          ],
+          "description": "برفيوم دون رش & رول دون (تعطير للجسم واماكن النبض) "
+         },
+        {
+          "name": "برفيوم دون رش  (تعطير للجسم واماكن النبض)",
+          "price": 270,
+          "image": "https://i.ibb.co/mVFs21G4/2431a482-f072-4f82-aec0-75cba3ed81c4.jpg",
+          "images": [
+            "https://i.ibb.co/XfRXZzXP/2af996d2-3620-4b08-a7e0-82edcb77579f.jpg",
+            "https://i.ibb.co/BVvWTjf0/b590ca1f-4402-4bc2-a178-6a99fc83aeaa.jpg"
+          ],
+          "description": "برفيوم دون رش & رول دون (تعطير للجسم واماكن النبض) "
+        }
+      ]
+    },
+    
    "makeup": {
       "title": "الميك اب",
       "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
