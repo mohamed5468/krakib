@@ -681,6 +681,37 @@
         }
       ]
     },
+
+    "tools": {
+      "title": "ادوات الميك اب",
+      "image": "https://i.ibb.co/hFWhyjYz/makeup.jpg",
+      "items": [
+        {
+          "name": "ليب لاينر فلومار برايه جميع درجاته✨♥️ ",
+          "price": 30,
+          "image": "https://i.ibb.co/sJMV8Fj5/Whats-App-Image-2026-08-04-at-5-41-05-AM-3.jpg",
+          "description": " ✨"
+        },
+        {
+          "name": "قلم كحل اسود سواد فحمي من فلومار ",
+          "price": 35,
+          "image": "https://i.ibb.co/nMpCvMQ4/Whats-App-Image-2026-08-04-at-5-41-05-AM-2.jpg",
+          "description": " 💗"
+        },
+        {
+          "name": "قلم كحل الوان من فلومار",
+          "price": 35,
+          "image": "https://i.ibb.co/Cp0sT5PK/Whats-App-Image-2026-08-04-at-5-41-05-AM-1.jpg",
+          "description": " ✅"
+        },
+        {
+          "name": "كحل الوان من روز بيري جميع الدرجات ",
+          "price": 80,
+          "image": "https://i.ibb.co/Pvs8hPnj/Whats-App-Image-2026-08-04-at-5-41-05-AM.jpg",
+          "description": " 🖤"
+       }
+      ]
+    },
     
    "makeup": {
       "title": "الميك اب",
