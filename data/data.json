@@ -20,7 +20,8 @@
         },
         {
           "name": "مجموعة لميس لعلاج الشعر",
-          "price": 1300,
+          "price": 1080,
+          "oldPrice": 1300,
           "image": "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
           "images": [
             "https://i.ibb.co/TMXfDSBn/mahitap-lamees-set.jpg",
@@ -33,6 +34,7 @@
         {
           "name": "شاور چل بعطور فرنسيه ميكس فواكهه✨ ",
           "price": 220,
+          "oldPrice": 250,
           "image": "https://i.ibb.co/kgbfx4KQ/e87a7acd-17a5-42a5-81e9-8d5937c497f9.jpg",
           "images": [
             "https://i.ibb.co/xSvSNCkL/da090105-9c73-477e-913f-bb40d4eb9197.jpg",
@@ -45,6 +47,7 @@
 {
           "name": "شاي الانوثه بمتريل مغربيه🇲🇦",
           "price": 170,
+  "oldPrice": 200,
           "image": "https://i.ibb.co/NnGCv0RW/5da334d4-5420-4f8e-b31c-88c360c56a5c.jpg",
           "images": [
             "https://i.ibb.co/9ksRr3bx/90d8a4c7-35aa-4aef-bf7b-6667c57da418.jpg"
@@ -55,75 +58,87 @@
 {
   "name": "هير استيك لتثبيت البيبي هير 🫶🏽",
   "price": 95,
+  "oldPrice": 120,
   "image": "https://i.ibb.co/ynjVbp6Y/Whats-App-Image-2026-08-07-at-7-14-04-PM.jpg",
   "description": "هير استيك لتثبيت البيبي هير مناسب للأطفال من عمر 3 سنوات والكبار، بمكونات طبيعية مثل زبدة الشيا وزيت جوز الهند. 🌿"
 },
         
         {
           "name": "هير سيرم (معالج للتقصف والهيشان)",
-          "price": 330,
+          "price": 290,
+          "oldPrice": 300,
           "image": "https://i.ibb.co/wN2t6NnL/mahitap-hair-serum.jpg",
           "description": "معالج للتقصف والهيشان ✨"
         },
         {
           "name": "فرشاة مصنوعة من خشب طبيعي",
-          "price": 210,
+          "price": 150,
+          "oldPrice": 210,
           "image": "https://i.ibb.co/DHbRcZrr/mahitap-wooden-comb.jpg",
           "description": "مصنوعة من خشب طبيعي وسنون طبيعية ✨"
         },
         {
           "name": "كريم الكولاچين البحري ولبان الدكر العماني",
           "price": 180,
+          "oldPrice": 220,
           "image": "https://i.ibb.co/Rp2jJbDW/Whats-App-Image-2026-08-03-at-2-37-04-AM.jpg",
           "description": " لتوحيد لون البشره وشد الوجهه والنضاره"
         },
         {
           "name": "✨سيرم لبان الدكر العُمان✨",
           "price": 270,
+          "oldPrice": 325,
           "image": "https://i.ibb.co/wrCcqK65/8bc2be69-e997-47b1-b818-e6b7e237e073.jpg",
           "description": " لشد البشره ويساعد علي التفتيح والنضاره وعلاج التصبغات وتقليل النمش🌸"
         },
         
         {
           "name": "هير ستيك طبيعي مع فرشاة للبيبي",
-          "price": 250,
+          "price": 215,
+          "oldPrice": 250,
           "image": "https://i.ibb.co/Lh03R36p/Whats-App-Image-2026-08-03-at-2-37-04-AM-1.jpg",
           "description": "بعطر فروتي لتقليل هيشان البيبي هير، يستخدم للأطفال من سن ٣ سنوات ✨"
         },
         {
           "name": "زبدة جسم علاجية",
-          "price": 220,
+          "price": 190,
+          "oldPrice": 220,
           "image": "https://i.ibb.co/fVcmkVFM/Whats-App-Image-2026-08-03-at-2-37-04-AM-2.jpg",
           "description": "بتعالج جفاف الجلد والحبوب وآثارها. مكوناتها كلها طبيعية مثل: زبدة الشيا وجوز الهند والعرقسوس واليوريا ✨"
         },
         
         {
           "name": "اسكراب الكولاجين",
-          "price": 250,
+          "price": 220,
+          "oldPrice": 250,
           "image": "https://i.ibb.co/Vcs6qtc6/Whats-App-Image-2026-08-03-at-2-37-04-AM-3.jpg",
           "description": "أول اسكراب للبشرة الحساسة بمكونات طبيعية مثل: زبدة الشيا والسمسم والكولاجين وخلاصة الشاي الأخضر ومكونات أخرى ✨"
         },
         {
           "name": "ديودرنت ستيك عطر فروتي",
-          "price": 210,
+          "price": 190,
+          "oldPrice": 210,
           "image": "https://i.ibb.co/Z1Vtz912/Whats-App-Image-2026-08-03-at-2-37-04-AM-4.jpg",
           "description": "لأول مرة ديودرنت ثبات من ٦ ساعات حتى ١٢ ساعة ✅ يناسب جميع أنواع البشرة ✨"
         },
         {
           "name": "ديودرنت كريمي عطر فرنسي نسائي",
-          "price": 230,
+          "price": 199,
+          "oldPrice": 230,
           "image": "https://i.ibb.co/yBRbVqZm/Whats-App-Image-2026-08-03-at-2-37-05-AM.jpg",
           "description": "في كل ما يوحي بكل ما هو أنثوي 🎀 يناسب جميع أنواع البشرة. ثبات من ٦ ساعات حتى ١٢ ساعة ✨"
         },
         {
           "name": "صن بلوك (واقي + تفتيح + ترطيب)",
-          "price": 190,
+          "price": 165,
+          "oldPrice": 190,
           "image": "https://i.ibb.co/C30t5v7N/Whats-App-Image-2026-08-03-at-2-37-05-AM-1.jpg",
           "description": "مكوناته: هيدروسول كاموميل وزيت الجزر وزبدة شيا وشمع ewax وفيتامين E وبانثينول B5 وأكسيد زنك. خالي من فيتامين A ومشتقاته لينفع للحامل والمرضع 🫶🏻"
         },
         {
           "name": "دراي اويل ببتلات الورد عطر باث اند بادي",
-          "price": 330,
+          "price": 295,
+          "oldPrice": 330,
           "image": "https://i.ibb.co/sJsz7tMn/mahitap-dry-oil.jpg",
           "description": "ملطف ومرطب ومعالج للاسترتش ماركس والسلوليت ✨"
         },
@@ -135,7 +150,8 @@
         },
         {
           "name": "ليب جلاس فواكه",
-          "price": 99,
+          "price": 60,
+          "oldPrice": 99,
           "image": "https://i.ibb.co/DP767b3Z/Whats-App-Image-2026-08-03-at-2-37-05-AM-3.jpg",
           "images": [
             "https://i.ibb.co/bRr09bFn/Whats-App-Image-2026-08-03-at-2-37-05-AM-2.jpg",
@@ -168,7 +184,8 @@
         },
 {
           "name": "سيرم للبشره بخلاصه الهيلرونيك اسيد & السالسيلك",
-          "price": 195,
+          "price": 190,
+  "oldPrice": 220,
           "image": "https://i.ibb.co/V0mC5f2g/5f2f090a-52e2-4017-aff8-b45aac86e4d5.jpg",
           "description": "للنضاره والترطيب وعلاج المسام والشوائب ✨✨"
         },
@@ -403,7 +420,7 @@
       "items": [
         {
           "name": "باكدچ الحمام المغربي كامل للعرايس والمتزوجين",
-          "price": 860,
+          "price": 870,
           "oldPrice": 950,
           "image": "https://i.ibb.co/Z6Y8G35Q/moroccan-bath-package.jpg",
           "description": "عنايه كامله لعلاج جلد الوزه والجلد الميت وجفاف الجلد وتوحيد لون الجلد وعلاج الجسم والبوتي من الحبوب واثارها 🍑🙊💜"
@@ -432,6 +449,7 @@
         {
   "name": "كريم كينتا وزيت الورد الأحمر الأصلي ❤️",
   "price": 450,
+    "oldPrice": 480,      
   "image": "https://i.ibb.co/ZRszMy3T/Whats-App-Image-2026-08-07-at-7-14-04-PM-1.jpg",
   "description": "كريم كينتا مع زيت الورد الأحمر الأصلي، منتجات مغربية للتفتيح ومناسبة للمناطق الحساسة. ✨"
 },
@@ -463,6 +481,19 @@
           "image": "https://i.ibb.co/jZhNQPyy/kenta-rose-musk.jpg",
           "description": "كينتا وزيت الورد لتفتيح الأريا برايفيت مع مسك سعودي فانيليا للتعطير 🤍"
         },
+
+        {
+  "name": "المشاط الأحمر الأصلي السعودي 🇸🇦♥️",
+  "price": 220,
+  "image": "https://i.ibb.co/ZpxxsngZ/Whats-App-Image-2026-08-08-at-1-51-59-AM.jpg",
+  "description": "المشاط الأحمر الأصلي السعودي يساعد على العناية بالشعر وتقليل مظهر الفراغات والهيشان. الكمية 100 جرام. Sold out."
+},
+{
+  "name": "سِدر المدينة الأخضر الأصلي ✨💚",
+  "price": 190,
+  "image": "https://i.ibb.co/q3b5rSGL/Whats-App-Image-2026-08-08-at-1-50-45-AM.jpg",
+  "description": "سِدر المدينة الأخضر الأصلي يساعد على التخلص من القشرة وتقليل التساقط، كما يساعد على تقوية بصيلات الشعر الضعيفة. الكمية 100 جرام. ✨"
+},
         {
           "name": "ليفة مغربية جديدة للجلد الحساس 🇲🇦",
           "price": 200,
@@ -737,7 +768,8 @@
         },
         {
           "name": "باكدچ قدم كامل",
-          "price": 490,
+          "price": 450,
+          "oldPrice": 490,
           "image": "https://i.ibb.co/jPw66d2Z/foot-package.jpg",
           "description": "عبارة عن: فوت بالم (معالج) + فوت تينت (مورد) + مبرد قدم (منظف للجلد الميت) + أملاح قدم (علاج لتشققات القدم والاسترخاء) + شراب سيلكون أصلي (لترطيب القدم وإزالة الجلد الميت) ✨"
         },
@@ -748,6 +780,19 @@
   "image": "https://i.ibb.co/gLSMvBkq/Whats-App-Image-2026-08-07-at-7-15-15-PM.jpg",
   "description": "مجموعة بديكير متكاملة للعناية بالجسم تمنحك نعومة وترطيبًا وإحساسًا بالانتعاش. ✨"
 },
+      {
+  "name": "فوت تينت مورد طبيعي ✨♥️",
+  "price": 70,
+  "image": "https://i.ibb.co/YTY4gkR0/Whats-App-Image-2026-08-08-at-12-14-42-AM.jpg",
+  "description": "فوت تينت مورد طبيعي يمنح الكعبين لونًا ورديًا طبيعيًا ومظهرًا أكثر حيوية. ✨"
+},
+{
+  "name": "فوت بالم ✨",
+  "price": 85,
+  "image": "https://i.ibb.co/gFdMb4Tw/Whats-App-Image-2026-08-08-at-12-14-42-AM-1.jpg",
+  "description": "فوت بالم يساعد على ترطيب القدمين والعناية بتشققات القدم للحصول على قدمين أكثر نعومة. ✨"
+},
+        
         {
           "name": "شراب سيلكون اصلي💯",
           "price": 120,
